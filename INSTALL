@@ -1,0 +1,6 @@
+== INSTALLATION
+
+Lancer ces commandes en tant que super-utilisateur (root), depuis un 
+terminal ouvert dans le répertoire qui contient ce fichier
+
+# ./install.sh

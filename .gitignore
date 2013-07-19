@@ -1,3 +1,5 @@
+*~
+
 *.py[cod]
 
 # C extensions
@@ -34,3 +36,8 @@ nosetests.xml
 .project
 .pydevproject
 .settings
+
+#Pkg compilation
+pkg/ArchLinux/pkg
+pkg/ArchLinux/src
+pkg/ArchLinux/publi*
