@@ -1,10 +1,22 @@
 import os
+from os import path
 import mimetypes
 from src import config 
+
+from urllib.parse import unquote
 
 ######
 # Ce module comporte un lot de fonctions utiles qui permettent de traiter des données
 ######
+
+def from_uri_to_path(files):
+    new_list = []
+    for elem in files:
+        elem = unquote(elem) # Transform URL format to normal encoding (%20 => " ")
+        elem = elem.replace("file://","")  # Remove file://
+        new_list.append(elem)
+    return new_list
+        
 
 def root_path(path):
     return path
@@ -19,11 +31,9 @@ def numbify(widget): # Only accept numbers for an entry
 def get_all_files(files,recursive=True): 
     file_list= []
     for elem in files:
-        #elem = elem[7:] 
-        elem = elem.replace("file://","") # Remove file://
-        if os.path.isfile(elem):
+        if path.isfile(elem):
             select_file(elem,file_list)
-        elif os.path.isdir(elem):
+        elif path.isdir(elem):
             if recursive:
                 file_list.extend(cross_recursive(elem))
                 
@@ -32,10 +42,10 @@ def get_all_files(files,recursive=True):
 def cross_recursive(dir):
     file_list = []
     for elem in os.listdir(dir):
-        elem = os.path.join(dir,elem)
-        if os.path.isfile(elem):
+        elem = path.join(dir,elem)
+        if path.isfile(elem):
             select_file(elem,file_list)
-        elif os.path.isdir(elem):
+        elif path.isdir(elem):
             file_list.extend(cross_recursive(elem))
     return file_list
 

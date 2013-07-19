@@ -214,7 +214,8 @@ class SelectPhotoView(view.View):
         dialog.set_select_multiple(True)
         response = dialog.run()
         if response == Gtk.ResponseType.OK:
-            self.files = tools.get_all_files(dialog.get_uris())
+            files = tools.from_uri_to_path(dialog.get_uris())
+            self.files = tools.get_all_files(files)
             self.recreate_model()
         elif response == Gtk.ResponseType.CANCEL:
             pass
