@@ -1,0 +1,5 @@
+#!/bin/bash
+
+/usr/bin/env python3 /usr/share/publiphoto/publiphoto.py $*
+
+exit $?

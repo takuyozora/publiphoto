@@ -1,0 +1,18 @@
+[Desktop Entry]
+Type=Action
+Description[fr_FR]=Prépare un lot de photo pour la publication
+Description[fr]=Prépare un lot de photo pour la publication
+Icon[fr_FR]=/usr/share/publiphoto/src/publiphoto.svg
+Icon[fr]=/usr/share/publiphoto/src/publiphoto.svg
+ToolbarLabel[fr_FR]=Lancer Publi' Photo
+ToolbarLabel[fr]=Lancer Publi' Photo
+Name[fr_FR]=Lancer Publi' Photo
+Name[fr]=Lancer Publi' Photo
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Folders=*;
+MimeTypes=inode/directory;image/*;
+Exec=/usr/bin/publiphoto %F
+Name[fr_FR]=Permet de publier des photos
+Name[fr]=Permet de publier des photos
