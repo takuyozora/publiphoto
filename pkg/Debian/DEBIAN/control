@@ -1,0 +1,8 @@
+Package: publiphoto
+Version: 1.0
+Section: graphics
+Priority: optional
+Architecture: all
+Depends: python3, python3-gi, python-imaging
+Maintainer: Mr RADISSON Olivier <olivier.radisson@insa-lyon.fr>
+Description: Help you to publish your photos. Can resize, add a label and rename a group of pictures.
