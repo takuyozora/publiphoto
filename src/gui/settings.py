@@ -6,17 +6,17 @@ from src.gui import view
 from src.settings import load_settings, Settings
 from src.tools import convert_to_rgb, convert_to_rgba
 
-
+######
+# Ce module permet de gérer les préférences :
+#  * Police 
+#    -- Taille
+#    -- Couleur
+#    -- Halo
+#    -- Font
+#  * Nom du répertoire par défaut
+######
 
 class SettingView(view.View):
-    """
-        Profile view
-         This is the main view of the programme
-          Allow you to :
-           * Connect to a profile host
-           * See log
-           * Switch to edit profile view
-    """
     
     def __init__(self,parent):
         view.View.__init__(self,"src/gui/glade/settingView.glade","settingBox")
@@ -32,6 +32,8 @@ class SettingView(view.View):
         sett = load_settings()
         self.entires["fontScale"].set_value(sett.font["scale"])
         self.entires["fontPath"].set_filename(sett.font["path"])
+        print(convert_to_rgba(sett.font["color"]))
+        print(convert_to_rgba(sett.font["haloColor"]))
         self.entires["fontColor"].set_rgba(convert_to_rgba(sett.font["color"]))
         self.entires["haloColor"].set_rgba(convert_to_rgba(sett.font["haloColor"]))
         self.entires["dirName"].set_text(sett.dirName)
