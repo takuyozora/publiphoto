@@ -32,8 +32,6 @@ class SettingView(view.View):
         sett = load_settings()
         self.entires["fontScale"].set_value(sett.font["scale"])
         self.entires["fontPath"].set_filename(sett.font["path"])
-        print(convert_to_rgba(sett.font["color"]))
-        print(convert_to_rgba(sett.font["haloColor"]))
         self.entires["fontColor"].set_rgba(convert_to_rgba(sett.font["color"]))
         self.entires["haloColor"].set_rgba(convert_to_rgba(sett.font["haloColor"]))
         self.entires["dirName"].set_text(sett.dirName)
