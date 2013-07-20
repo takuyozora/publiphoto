@@ -4,7 +4,7 @@ import sys
 
 from gi.repository import Gtk
 
-from ..gui.welcome import WelcomeView
+from src.gui.welcome import WelcomeView
 from src.gui.labelize import SelectPhotoView
 from src.tools import root_path 
 

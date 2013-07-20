@@ -1,8 +1,7 @@
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageChops
 import math
 
-from src import config
-
+from src.settings import load_settings
 
 #######
 # Ce module sert à traiter les images
@@ -70,18 +69,19 @@ def draw_text_with_halo(img, text, font, halo_size, col, halo_col):
 #     return Image.composite(img, blurred_halo, ImageChops.invert(blurred_halo))
 
 def draw_label(img_src,label,font=False):
+    sett = load_settings()
     im=img_src
     x = im.size[0]
     y = im.size[1]
     size = math.sqrt(x*y)
-    f_size = (int)(size/60)
+    f_size = (int)((size/60) * sett.font["scale"])
     
     if font is not False and font is not None:
         f = ImageFont.truetype(font,f_size)
     else:
-        f = ImageFont.truetype(config.DEFAULT_FONT,f_size)
+        f = ImageFont.truetype(sett.font["path"],f_size)
     
-    im = draw_text_with_halo(im,label,f,0.3,config.COLOR_TEXT,config.COLOR_HALO)
+    im = draw_text_with_halo(im,label,f,0.3,sett.font["color"],sett.font["haloColor"])
     
     return im
     

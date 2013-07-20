@@ -4,7 +4,7 @@ from time import sleep, time
 
 from gi.repository import GObject, Gdk, GLib
 
-from src.config import PUBLIPHOTO_DIRNAME
+from src.settings import load_settings
 from src.gui import view
 from src import tools
 from src import image
@@ -28,6 +28,7 @@ class RunningProcess(threading.Thread):
         self.view = view
         
     def run(self):
+        PUBLIPHOTO_DIRNAME = load_settings().dirName
         i = 0
         self.must_stop = False
         self.compute = True

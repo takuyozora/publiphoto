@@ -3,7 +3,6 @@
 import sys
 import os
 import pickle
-import profile
 
 ######
 # Ce module permet de gérer les profiles
