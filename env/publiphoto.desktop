@@ -5,4 +5,7 @@ Type=Application
 Terminal=false
 Exec=/usr/bin/publiphoto
 Name=Publi' Photo
+Name[fr]=Publi' Photo
 Icon=/usr/share/publiphoto/src/publiphoto.svg
+Categories=Graphics;Utility;RasterGraphics;Photography;Publishing;ImageProcessing
+MimeType=inode/directory;image/*
