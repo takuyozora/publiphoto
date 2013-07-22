@@ -34,16 +34,12 @@ git_name=publiphoto
 package() {
 	cd "$srcdir/"
 	
-	if [[ -d "$srcdir/$git_name" ]] ; then
-		cd $git_name
- 		git pull origin
-	   msg "The local files are updated."
-	else
-		git clone $git_pkg_repo
-		cd $git_name
-	fi
+	rm -rf $git_name
+	
+	git clone $git_pkg_repo
+	cd $git_name
   
-   pwd
+    pwd
 	
 	mkdir -p "$pkgdir/usr/bin"
 	mv env/publiphoto "$pkgdir/usr/bin/"
