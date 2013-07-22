@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 ######
 # Module de configuration, attention à ne pas introduire de valeur erronnées
 ######

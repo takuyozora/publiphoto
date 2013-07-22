@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cp po/$1/LC_MESSAGES/publiphoto.mo /usr/share/locale/$1/LC_MESSAGES/publiphoto.mo
+
+exit $?

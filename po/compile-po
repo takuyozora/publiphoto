@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mkdir -p po/$1/LC_MESSAGES/
+msgfmt --output-file=po/$1/LC_MESSAGES/publiphoto.mo po/$1.po
+
+exit $?

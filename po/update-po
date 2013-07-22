@@ -1,0 +1,6 @@
+#!/bin/bash
+
+po/create-pot
+msgmerge po/"$1".po po/publiphoto.pot --output-file=po/"$1".po
+
+exit $?

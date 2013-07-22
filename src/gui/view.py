@@ -18,6 +18,7 @@ class View(Gtk.Alignment):
         
         ## Load from Glade
         self.builder = Gtk.Builder()
+        self.builder.set_translation_domain('publiphoto')
         self.builder.add_from_file(gladeFile)
         self.builder.connect_signals(self)
         self.viewBox = self.builder.get_object(viewName)

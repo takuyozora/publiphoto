@@ -836,7 +836,7 @@ Tips : %n is replaces by the file number.</property>
                         <property name="margin_left">5</property>
                         <property name="orientation">vertical</property>
                         <property name="action">select-folder</property>
-                        <property name="title" translatable="yes">Sélectionner un dossier</property>
+                        <property name="title" translatable="yes">Select a directory</property>
                         <signal name="selection-changed" handler="on_dir_selected" swapped="no"/>
                       </object>
                       <packing>

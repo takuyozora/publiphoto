@@ -1,0 +1,10 @@
+char *s = N_("Settings");
+char *s = N_("<b>Font</b>");
+char *s = N_("Scale");
+char *s = N_("Default font");
+char *s = N_("Font color");
+char *s = N_("Halo color");
+char *s = N_("<b>Default directory</b>");
+char *s = N_("Name");
+char *s = N_("Retour");
+char *s = N_("Enregistrer");

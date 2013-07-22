@@ -201,6 +201,7 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
+                    <property name="title" translatable="yes">Select a font file</property>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -326,7 +327,7 @@
             <property name="margin_top">10</property>
             <child>
               <object class="GtkButton" id="button1">
-                <property name="label" translatable="yes">Retour</property>
+                <property name="label" translatable="yes">Back</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -341,7 +342,7 @@
             </child>
             <child>
               <object class="GtkButton" id="button2">
-                <property name="label" translatable="yes">Enregistrer</property>
+                <property name="label" translatable="yes">Save</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>

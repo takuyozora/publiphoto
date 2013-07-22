@@ -1,0 +1,5 @@
+#!/bin/bash
+
+msginit --no-translator -i po/publiphoto.pot -l $1  -o po/$1.po
+
+exit $?

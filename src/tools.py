@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import os
 from os import path
 import mimetypes
@@ -7,7 +9,7 @@ from gi.repository import Gdk
 from urllib.parse import unquote
 
 ######
-# Ce module comporte un lot de fonctions utiles qui permettent de traiter des données
+# Ce module comporte un lot de fonctions utiles qui permettent de traiter des donnees
 ######
 
 def convert_to_rgba(color):

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+xgettext --sort-output --keyword=translatable -o po/publiphoto-glade.pot `find . -name "*.glade"`
+xgettext --language=Python --keyword=_ --output=po/publiphoto-python.pot `find . -name "*.py"`
+cd po/
+msgcat publiphoto-*.pot > publiphoto.pot
+
+exit $?

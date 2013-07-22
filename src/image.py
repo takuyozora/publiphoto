@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageChops
 import math
 
