@@ -41,31 +41,6 @@
     <property name="can_focus">False</property>
     <property name="stock">gtk-add</property>
   </object>
-  <object class="GtkWindow" id="window1">
-    <property name="can_focus">False</property>
-    <child>
-      <object class="GtkBox" id="box6">
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <property name="orientation">vertical</property>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-      </object>
-    </child>
-  </object>
   <object class="GtkWindow" id="window2">
     <property name="can_focus">False</property>
     <child>
@@ -677,16 +652,37 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkFileChooserButton" id="font">
+                      <object class="GtkFontButton" id="font">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <signal name="file-set" handler="on_file_selected" swapped="no"/>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="font">Sans 12</property>
+                        <property name="preview_text">John Doe © Creative Commons By</property>
+                        <property name="use_font">True</property>
+                        <property name="show_size">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">True</property>
                         <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="defaultDirLabel">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="margin_left">10</property>
+                        <property name="xalign">0</property>
+                        <property name="label" translatable="yes">La taille de la police n'a pas d'incidence</property>
+                        <attributes>
+                          <attribute name="style" value="italic"/>
+                          <attribute name="scale" value="0.75"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">2</property>
                       </packing>
                     </child>
                   </object>

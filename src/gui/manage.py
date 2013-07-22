@@ -79,6 +79,12 @@ class NewProfileView(view.View):
             self.elems["toggleLicence"].set_active(False)
             self.licenceChooser.set_active_id(LICENCES[0])
             
+        if p.font is not False:
+            self.elems["toggleFont"].set_active(True)
+            self.elems["font"].set_font_name(p.font)
+        else:
+            self.elems["toggleFont"].set_active(False)
+            
         if p.rename is not False:
             self.elems["toggleRename"].set_active(True)
             self.elems["prefixe"].set_text(p.rename[0])
@@ -157,7 +163,7 @@ class NewProfileView(view.View):
         else:
             p.dir = True
         if self.elems["toggleFont"].get_active():
-            p.font = self.font
+            p.font = self.elems["font"].get_font_name()
         try:
             p.save(self.elems["name"].get_text())
             dialog = Gtk.MessageDialog(self.parent, 0, Gtk.MessageType.INFO,
