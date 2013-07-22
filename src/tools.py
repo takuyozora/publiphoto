@@ -2,13 +2,17 @@ import os
 from os import path
 import mimetypes
 from src import config 
-from gi.repository import Gdk
+from gi.repository import Gdk,Pango
 
 from urllib.parse import unquote
 
 ######
 # Ce module comporte un lot de fonctions utiles qui permettent de traiter des données
 ######
+
+def get_font_path(font):
+    pFont = Pango.FontDescription(font)
+    print(pFont)
 
 def convert_to_rgba(color):
     return Gdk.RGBA(color[0],color[1],color[2],0)

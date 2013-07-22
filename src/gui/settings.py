@@ -4,7 +4,7 @@ from gi.repository import Gtk,Gdk
 
 from src.gui import view
 from src.settings import load_settings, Settings
-from src.tools import convert_to_rgb, convert_to_rgba
+from src.tools import convert_to_rgb, convert_to_rgba, get_font_path
 
 ######
 # Ce module permet de gérer les préférences :
@@ -22,7 +22,7 @@ class SettingView(view.View):
         view.View.__init__(self,"src/gui/glade/settingView.glade","settingBox")
         
         self.entires = self.load_objects([
-                                          "fontScale","fontPath","fontColor","haloColor",
+                                          "fontScale","fontPath","fontButton","fontColor","haloColor",
                                           "dirName"])
         
         self.fill_with_settings()
@@ -31,7 +31,8 @@ class SettingView(view.View):
     def fill_with_settings(self):
         sett = load_settings()
         self.entires["fontScale"].set_value(sett.font["scale"])
-        self.entires["fontPath"].set_filename(sett.font["path"])
+        #self.entires["fontPath"].set_filename(sett.font["path"])
+        self.entires["fontButton"].set_font_name(sett.font["name"])
         self.entires["fontColor"].set_rgba(convert_to_rgba(sett.font["color"]))
         self.entires["haloColor"].set_rgba(convert_to_rgba(sett.font["haloColor"]))
         self.entires["dirName"].set_text(sett.dirName)
@@ -39,7 +40,8 @@ class SettingView(view.View):
     def fill_settings(self):
         sett = Settings()
         sett.font["scale"] = (float)(self.entires["fontScale"].get_value())
-        sett.font["path"] = (str)(self.entires["fontPath"].get_filename())
+        sett.font["name"] = (str)(self.entires["fontButton"].get_font_name())
+        #sett.font["path"] = (str)(self.entires["fontPath"].get_filename())
         sett.font["color"] = convert_to_rgb(self.entires["fontColor"].get_rgba())
         sett.font["haloColor"] = convert_to_rgb(self.entires["haloColor"].get_rgba())
         sett.dirName = (str)(self.entires["dirName"].get_text())

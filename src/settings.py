@@ -23,7 +23,7 @@ class Settings:
     """
     
     def __init__(self):
-        self.font = {"scale":1,"path":"src/media/DejaVuSansCondensed.ttf","color":(255,255,255),"haloColor":(0,0,0)}
+        self.font = {"scale":1,"path":"src/media/DejaVuSansCondensed.ttf","name":"DejaVuSansCondensed","color":(255,255,255),"haloColor":(0,0,0)}
         self.dirName = "publiphoto"
         
     def save(self):
