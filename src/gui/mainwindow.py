@@ -21,7 +21,7 @@ class MainWindow(Gtk.Window):
     
     def __init__(self):
         Gtk.Window.__init__(self, title="Publi' Photo")
-        self.set_default_size(600,400)
+        self.window_size = (600,400)
         self.set_icon_from_file("src/publiphoto.svg")
         self.connect("destroy",self.on_destroy)
         
@@ -33,12 +33,16 @@ class MainWindow(Gtk.Window):
             self.init_welcome_view()
         else:
             self.switch_view(SelectPhotoView(self,sys.argv))
+            
+    def on_view_changed(self,widget,child):
+        self.resize(self.window_size[0],self.window_size[1])
         
     def init_default_window(self):
         builder = Gtk.Builder()
         builder.add_from_file("src/gui/glade/mainWindow.glade")
         self.mainBox = builder.get_object("mainBox")
         self.viewContainer = builder.get_object("viewContainer")
+        self.viewContainer.connect("set-focus-child",self.on_view_changed)
         self.mainBox.reparent(self) # Reparent mainBox (cause it's already parent in glade)
         
     def switch_view(self,view):
