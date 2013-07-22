@@ -193,7 +193,7 @@ class SelectPhotoView(view.View):
     def on_continue_clicked(self,widget):
         if len(self.files) < 1:
             dialog = Gtk.MessageDialog(self.parent, 0, Gtk.MessageType.INFO,
-            Gtk.ButtonsType.OK, "Selectionnez au moins une image avant de porusuivre")
+            Gtk.ButtonsType.OK, "Selectionnez au moins une image avant de poursuivre")
             dialog.run()
     
             dialog.destroy()
