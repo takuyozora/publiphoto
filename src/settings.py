@@ -12,7 +12,7 @@ import pickle
 if sys.platform.startswith('linux'):
     SETTINGS_PATH=os.path.join(os.environ["HOME"],".publiphoto")
 else:
-    SETTINGS_PATH=os.path.join(os.environ["HOME"],"Publiphoto")
+    SETTINGS_PATH=os.path.join(os.path.expanduser('~user'),"Publiphoto")
     
 if os.path.exists(SETTINGS_PATH) is not True:
     os.makedirs(SETTINGS_PATH)

@@ -12,7 +12,8 @@ import pickle
 if sys.platform.startswith('linux'):
     PROFILE_PATH=os.path.join(os.environ["HOME"],".publiphoto","profiles")
 else:
-    PROFILE_PATH=os.path.join(os.environ["HOME"],"Publiphoto","profiles")
+    PROFILE_PATH=os.path.join(os.path.expanduser('~user'),"Publiphoto","profiles")
+    
     
 if os.path.exists(PROFILE_PATH) is not True:
     os.makedirs(PROFILE_PATH)
