@@ -223,8 +223,9 @@ class ManageProfileView(view.View):
             "Êtes vous sur de vouloir supprimer le profile : "+self.currentSelected)
         response = dialog.run()
         if response == Gtk.ResponseType.YES:
+            model, treeiter = self.view.get_selection().get_selected()
             if del_profile(self.currentSelected) is not False:
-                del self.model[0]
+                del self.model[treeiter]
             else:
                 pass
         elif response == Gtk.ResponseType.NO:
