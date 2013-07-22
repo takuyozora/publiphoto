@@ -54,4 +54,11 @@ package() {
 	mkdir -p "$pkgdir/usr/share/publiphoto"
 	mv src "$pkgdir/usr/share/publiphoto/"
 	mv publiphoto.py "$pkgdir/usr/share/publiphoto/"
+	
+	for i in "po/*"; do
+		if [ -d "$i" ]; then
+			mkdir -p "$pkgdir/usr/share/locale/$i/LC_MESSAGES"
+			mv "po/$i/LC_MESSAGES/publiphoto.mo" "$pkgdir/usr/share/locale/$i/LC_MESSAGES/publiphoto.mo"
+		fi
+	done
 }
