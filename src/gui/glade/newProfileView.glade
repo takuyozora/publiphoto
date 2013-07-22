@@ -41,31 +41,6 @@
     <property name="can_focus">False</property>
     <property name="stock">gtk-add</property>
   </object>
-  <object class="GtkWindow" id="window1">
-    <property name="can_focus">False</property>
-    <child>
-      <object class="GtkBox" id="box6">
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <property name="orientation">vertical</property>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-      </object>
-    </child>
-  </object>
   <object class="GtkWindow" id="window2">
     <property name="can_focus">False</property>
     <child>
@@ -86,7 +61,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="xpad">15</property>
-                <property name="label" translatable="yes">Nouveau Profile</property>
+                <property name="label" translatable="yes">New profile</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
                   <attribute name="scale" value="1.3"/>
@@ -133,7 +108,7 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="xalign">0</property>
-                    <property name="label" translatable="yes">&lt;b&gt;Nom du profile&lt;/b&gt;</property>
+                    <property name="label" translatable="yes">&lt;b&gt;Profile name&lt;/b&gt;</property>
                     <property name="use_markup">True</property>
                   </object>
                   <packing>
@@ -151,7 +126,8 @@
                       <object class="GtkLabel" id="label16">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">Nom unique pour le profile : </property>
+                        <property name="margin_right">5</property>
+                        <property name="label" translatable="yes">Unique name for the profile :</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -212,7 +188,7 @@
                       <object class="GtkLabel" id="label3">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">&lt;b&gt;Dimensions&lt;/b&gt;</property>
+                        <property name="label" translatable="yes">&lt;b&gt;Size&lt;/b&gt;</property>
                         <property name="use_markup">True</property>
                       </object>
                       <packing>
@@ -223,7 +199,7 @@
                     </child>
                     <child>
                       <object class="GtkCheckButton" id="toggleSize">
-                        <property name="label" translatable="yes">Activer</property>
+                        <property name="label" translatable="yes">Activate</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
@@ -256,7 +232,7 @@
                     <property name="row_homogeneous">True</property>
                     <child>
                       <object class="GtkCheckButton" id="ratio">
-                        <property name="label" translatable="yes">Conserver</property>
+                        <property name="label" translatable="yes">Keep</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
@@ -281,7 +257,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="xalign">0</property>
-                        <property name="label" translatable="yes">Proportions</property>
+                        <property name="label" translatable="yes">Ratio</property>
                       </object>
                       <packing>
                         <property name="left_attach">0</property>
@@ -323,7 +299,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="xalign">0</property>
-                        <property name="label" translatable="yes">Largeur</property>
+                        <property name="label" translatable="yes">Width</property>
                       </object>
                       <packing>
                         <property name="left_attach">0</property>
@@ -354,7 +330,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="xalign">0</property>
-                        <property name="label" translatable="yes">Hauteur</property>
+                        <property name="label" translatable="yes">Height</property>
                       </object>
                       <packing>
                         <property name="left_attach">0</property>
@@ -421,7 +397,7 @@
                       <object class="GtkLabel" id="label4">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">&lt;b&gt;Auteur&lt;/b&gt;</property>
+                        <property name="label" translatable="yes">&lt;b&gt;Author&lt;/b&gt;</property>
                         <property name="use_markup">True</property>
                       </object>
                       <packing>
@@ -432,7 +408,7 @@
                     </child>
                     <child>
                       <object class="GtkCheckButton" id="toggleAuthor">
-                        <property name="label" translatable="yes">Activer</property>
+                        <property name="label" translatable="yes">Activate</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
@@ -466,7 +442,8 @@
                       <object class="GtkLabel" id="label5">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">Nom à afficher : </property>
+                        <property name="margin_right">5</property>
+                        <property name="label" translatable="yes">Name :</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -538,7 +515,7 @@
                     </child>
                     <child>
                       <object class="GtkCheckButton" id="toggleLicence">
-                        <property name="label" translatable="yes">Activer</property>
+                        <property name="label" translatable="yes">Activate</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
@@ -572,7 +549,8 @@
                       <object class="GtkLabel" id="label14">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">Licence à appliquer : </property>
+                        <property name="margin_right">5</property>
+                        <property name="label" translatable="yes">Licence to apply :</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -623,7 +601,7 @@
                       <object class="GtkLabel" id="label1">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">&lt;b&gt;Police personnalisée&lt;/b&gt;</property>
+                        <property name="label" translatable="yes">&lt;b&gt;Customised font&lt;/b&gt;</property>
                         <property name="use_markup">True</property>
                       </object>
                       <packing>
@@ -634,7 +612,7 @@
                     </child>
                     <child>
                       <object class="GtkCheckButton" id="toggleFont">
-                        <property name="label" translatable="yes">Activer</property>
+                        <property name="label" translatable="yes">Activate</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
@@ -668,7 +646,8 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="margin_left">12</property>
-                        <property name="label" translatable="yes">Chemin vers la police : </property>
+                        <property name="margin_right">5</property>
+                        <property name="label" translatable="yes">Path to the font file :</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -729,7 +708,7 @@
                       <object class="GtkLabel" id="label17">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">&lt;b&gt;Rennomer&lt;/b&gt;</property>
+                        <property name="label" translatable="yes">&lt;b&gt;Rename&lt;/b&gt;</property>
                         <property name="use_markup">True</property>
                       </object>
                       <packing>
@@ -740,7 +719,7 @@
                     </child>
                     <child>
                       <object class="GtkCheckButton" id="toggleRename">
-                        <property name="label" translatable="yes">Activer</property>
+                        <property name="label" translatable="yes">Activate</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
@@ -776,7 +755,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="xalign">0</property>
-                        <property name="label" translatable="yes">Préfixe</property>
+                        <property name="label" translatable="yes">Prefix</property>
                         <property name="track_visited_links">False</property>
                       </object>
                       <packing>
@@ -791,7 +770,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="xalign">0</property>
-                        <property name="label" translatable="yes">Suffixe</property>
+                        <property name="label" translatable="yes">Suffix</property>
                       </object>
                       <packing>
                         <property name="left_attach">0</property>
@@ -875,7 +854,7 @@
                       <object class="GtkLabel" id="label19">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">&lt;b&gt;Répertoire de sortie&lt;/b&gt;</property>
+                        <property name="label" translatable="yes">&lt;b&gt;Output directory&lt;/b&gt;</property>
                         <property name="use_markup">True</property>
                       </object>
                       <packing>
@@ -886,7 +865,7 @@
                     </child>
                     <child>
                       <object class="GtkCheckButton" id="toggleDir">
-                        <property name="label" translatable="yes">Activer</property>
+                        <property name="label" translatable="yes">Activate</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
@@ -917,7 +896,7 @@
                     <property name="can_focus">False</property>
                     <property name="margin_left">12</property>
                     <property name="xalign">0</property>
-                    <property name="label" translatable="yes">Si il est activé un dossier est créé, sinon les images sont placées dans leur répertoire initial</property>
+                    <property name="label" translatable="yes">If activate a directory is create, if not, pictures will be put in their initial directory.</property>
                     <attributes>
                       <attribute name="style" value="italic"/>
                       <attribute name="scale" value="0.75"/>
@@ -950,7 +929,7 @@
             <property name="margin_top">15</property>
             <child>
               <object class="GtkButton" id="button1">
-                <property name="label" translatable="yes">Annuler</property>
+                <property name="label" translatable="yes">Cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -965,7 +944,7 @@
             </child>
             <child>
               <object class="GtkButton" id="button2">
-                <property name="label" translatable="yes">Enregistrer</property>
+                <property name="label" translatable="yes">Save</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>

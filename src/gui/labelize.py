@@ -2,6 +2,8 @@
 
 from gi.repository import Gtk,Gdk
 
+from gettext import gettext as _
+
 from src.tools import numbify
 from src import tools
 from src.config import LICENCES
@@ -178,7 +180,7 @@ class SelectPhotoView(view.View):
         self.model = Gtk.ListStore(str)
         self.view = Gtk.TreeView(self.model)
         renderer = Gtk.CellRendererText()
-        column = Gtk.TreeViewColumn("Fichier", renderer, text=0)
+        column = Gtk.TreeViewColumn(_("Files"), renderer, text=0)
         self.view.append_column(column)
         self.box  = self.builder.get_object("box")
         self.box.add(self.view)
@@ -193,7 +195,7 @@ class SelectPhotoView(view.View):
     def on_continue_clicked(self,widget):
         if len(self.files) < 1:
             dialog = Gtk.MessageDialog(self.parent, 0, Gtk.MessageType.INFO,
-            Gtk.ButtonsType.OK, "Selectionnez au moins une image avant de porusuivre")
+            Gtk.ButtonsType.OK, _("Please, select at least one file to continue"))
             dialog.run()
     
             dialog.destroy()
@@ -207,7 +209,7 @@ class SelectPhotoView(view.View):
         self.view.set_model(self.model)
         
     def on_change_clicked(self,widget):
-        dialog = Gtk.FileChooserDialog("Selectionner les images à traiter", self.parent,
+        dialog = Gtk.FileChooserDialog(_("Select pictures to labelize"), self.parent,
             Gtk.FileChooserAction.OPEN,
             (Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
              Gtk.STOCK_OPEN, Gtk.ResponseType.OK))

@@ -2,6 +2,8 @@
 
 from gi.repository import Gtk,Gdk
 
+from gettext import gettext as _
+
 from src.gui import view
 from src.settings import load_settings, Settings
 from src.tools import convert_to_rgb, convert_to_rgba
@@ -47,9 +49,9 @@ class SettingView(view.View):
         
     def on_save_clicked(self,widget):
         dialog = Gtk.MessageDialog(self.parent, 0, Gtk.MessageType.QUESTION,
-        Gtk.ButtonsType.OK_CANCEL, "Confirmer l'enregistrement")
+        Gtk.ButtonsType.OK_CANCEL, _("Confirm saving"))
         dialog.format_secondary_text(
-            "Êtes vous sur de vouloir remplacer les préférences par celles-ci ?")
+            _("Are you sure to replace settings ?"))
         response = dialog.run()
         if response == Gtk.ResponseType.OK:
             dialog.destroy()

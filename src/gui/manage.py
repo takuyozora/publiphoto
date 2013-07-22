@@ -2,6 +2,8 @@
 
 from gi.repository import Gtk,Gdk
 
+from gettext import gettext as _
+
 from src.config import LICENCES
 from src.tools import numbify
 from src.gui import view
@@ -122,9 +124,9 @@ class NewProfileView(view.View):
     def on_save_clicked(self,widget):
         if self.elems["name"].get_text() in get_profiles():
             dialog = Gtk.MessageDialog(self.parent, 0, Gtk.MessageType.WARNING,
-            Gtk.ButtonsType.OK_CANCEL, "Il y a déjà un profile à ce nom")
+            Gtk.ButtonsType.OK_CANCEL, _("A profile already has this name"))
             dialog.format_secondary_text(
-                "Voulez vous tout de même enregistrer ce profile et perdre l'ancien ?")
+                _("Are you sure to save this profile and lose the older one ?"))
             response = dialog.run()
             if response == Gtk.ResponseType.OK:
                 dialog.destroy()
@@ -161,14 +163,14 @@ class NewProfileView(view.View):
         try:
             p.save(self.elems["name"].get_text())
             dialog = Gtk.MessageDialog(self.parent, 0, Gtk.MessageType.INFO,
-            Gtk.ButtonsType.OK, "Profile créer avec succès")
+            Gtk.ButtonsType.OK, _("Succed to create the profile"))
             dialog.run()
             dialog.destroy()
         except:
             dialog = Gtk.MessageDialog(self.parent, 0, Gtk.MessageType.ERROR,
-            Gtk.ButtonsType.CANCEL, "Une erreur est survenue")
+            Gtk.ButtonsType.CANCEL, _("An error occured"))
             dialog.format_secondary_text(
-                "Impossible d'enregistrer le profile")
+                _("Unable to save the profile"))
             dialog.run()
             dialog.destroy()
             return
@@ -189,7 +191,7 @@ class ManageProfileView(view.View):
             self.model.append([elem])
         self.view = Gtk.TreeView(self.model)
         renderer = Gtk.CellRendererText()
-        column = Gtk.TreeViewColumn("Nom du profile", renderer, text=0)
+        column = Gtk.TreeViewColumn(_("Profile name"), renderer, text=0)
         self.view.append_column(column)
         
         self.profiles.add(self.view)
@@ -218,9 +220,9 @@ class ManageProfileView(view.View):
         if self.currentSelected is None:
             return
         dialog = Gtk.MessageDialog(self.parent, 0, Gtk.MessageType.QUESTION,
-            Gtk.ButtonsType.YES_NO, "Confirmer l'action")
+            Gtk.ButtonsType.YES_NO, _("Confirm the action"))
         dialog.format_secondary_text(
-            "Êtes vous sur de vouloir supprimer le profile : "+self.currentSelected)
+            _("Are you sure to delete thie profile %s ?") % self.currentSelected)
         response = dialog.run()
         if response == Gtk.ResponseType.YES:
             model, treeiter = self.view.get_selection().get_selected()
