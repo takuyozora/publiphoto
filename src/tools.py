@@ -23,6 +23,8 @@ def from_uri_to_path(files):
     for elem in files:
         elem = unquote(elem) # Transform URL format to normal encoding (%20 => " ")
         elem = elem.replace("file://","")  # Remove file://
+        if not sys.platform.startswith('linux'):
+            elem = elem[1:] # WINDOWS compatibility (remove the first /)
         new_list.append(elem)
     return new_list
         

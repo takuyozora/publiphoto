@@ -35,8 +35,9 @@ if __name__ == '__main__':
     window = MainWindow()
     window.show_all()
     
-    GLib.threads_init()
-    GObject.threads_init()
-    Gdk.threads_init()
+    if sys.platform.startswith('linux'):
+        GLib.threads_init()
+        GObject.threads_init()
+        Gdk.threads_init()
     
     Gtk.main()
