@@ -34,7 +34,7 @@ class MainWindow(Gtk.Window):
         else:
             self.switch_view(SelectPhotoView(self,sys.argv))
             
-    def on_view_changed(self,widget,child):
+    def on_view_changed(self,widget=None,child=None):
         self.resize(self.window_size[0],self.window_size[1])
         
     def init_default_window(self):
@@ -42,11 +42,12 @@ class MainWindow(Gtk.Window):
         builder.add_from_file("src/gui/glade/mainWindow.glade")
         self.mainBox = builder.get_object("mainBox")
         self.viewContainer = builder.get_object("viewContainer")
-        self.viewContainer.connect("set-focus-child",self.on_view_changed)
+        #self.viewContainer.connect("set-focus-child",self.on_view_changed)
         self.mainBox.reparent(self) # Reparent mainBox (cause it's already parent in glade)
         
     def switch_view(self,view):
         self.clean_viewContainer()
+        self.on_view_changed()
         self.current_view = view
         self.viewContainer.pack_start(self.current_view,True,True,0)
         self.current_view.show()
