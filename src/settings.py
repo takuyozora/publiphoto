@@ -28,6 +28,9 @@ class Settings:
         
     def __repr__(self):
         return (str)(self.__dict__)
+    
+    def __str__(self):
+        return (str)(self.__dict__)
         
     def save(self):
         with open(os.path.join(SETTINGS_PATH,"publiphoto.settings"),'wb+') as file:
