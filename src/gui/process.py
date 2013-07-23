@@ -31,7 +31,8 @@ class RunningProcess(threading.Thread):
         self.view = view
         
     def run(self):
-        PUBLIPHOTO_DIRNAME = load_settings().dirName
+        sett = load_settings()
+        PUBLIPHOTO_DIRNAME = sett.dirName
         i = 0
         self.must_stop = False
         self.compute = True
@@ -48,7 +49,10 @@ class RunningProcess(threading.Thread):
                 img = image.open_img(path)
             except Exception as e:
                 self.view.add_to_log("  "+_("Unable to open file"))
-                self.view.add_to_log((str)(e))
+                self.view.add_to_log("  "+(str)(e))
+                self.view.add_to_log("  "+_("Picture")+" : "+path)
+                self.view.add_to_log("  "+_("Settings")+" : "+sett)
+                self.view.add_to_log("  "+_("Args")+" : "+self.args)
                 continue
             if self.must_stop:
                 break
@@ -71,6 +75,9 @@ class RunningProcess(threading.Thread):
             except Exception as e:
                 self.view.add_to_log("  "+_("Unable to rename the picute"))
                 self.view.add_to_log("  "+(str)(e))
+                self.view.add_to_log("  "+_("Picture")+" : "+path)
+                self.view.add_to_log("  "+_("Settings")+" : "+sett)
+                self.view.add_to_log("  "+_("Args")+" : "+self.args)
                 continue
             
             try:
@@ -87,7 +94,10 @@ class RunningProcess(threading.Thread):
                         break
             except Exception as e:
                 self.view.add_to_log("  "+_("Unable to add the label"))
-                self.view.add_to_log((str)(e))
+                self.view.add_to_log("  "+(str)(e))
+                self.view.add_to_log("  "+_("Picture")+" : "+path)
+                self.view.add_to_log("  "+_("Settings")+" : "+sett)
+                self.view.add_to_log("  "+_("Args")+" : "+self.args)
                 continue
                 
             try:
@@ -116,7 +126,10 @@ class RunningProcess(threading.Thread):
                 self.view.add_to_log("  -- "+_("Succes"))
             except Exception as e:
                 self.view.add_to_log("  "+_("Unable to save the picture"))
-                self.view.add_to_log((str)(e))
+                self.view.add_to_log("  "+(str)(e))
+                self.view.add_to_log("  "+_("Picture")+" : "+path)
+                self.view.add_to_log("  "+_("Settings")+" : "+sett)
+                self.view.add_to_log("  "+_("Args")+" : "+self.args)
                 continue
                 
         self.view.update_progress(n_finished/len(self.files))    
