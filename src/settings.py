@@ -26,6 +26,9 @@ class Settings:
         self.font = {"scale":1,"haloScale":1,"path":"src/media/DejaVuSansCondensed.ttf","color":(255,255,255),"haloColor":(0,0,0)}
         self.dirName = "publiphoto"
         
+    def __repr__(self):
+        return (str)(self.__dict__)
+        
     def save(self):
         with open(os.path.join(SETTINGS_PATH,"publiphoto.settings"),'wb+') as file:
             pickle.dump(self,file)
