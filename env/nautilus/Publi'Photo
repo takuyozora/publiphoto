@@ -1,5 +1,5 @@
 #!/bin/bash
 
-/media/Donnes/Programmation/Eclipse/PubliPhoto/publiphoto.py $NAUTILUS_SCRIPT_SELECTED_URIS
+/usr/share/publiphoto/publiphoto.py $NAUTILUS_SCRIPT_SELECTED_URIS
 
 exit 0

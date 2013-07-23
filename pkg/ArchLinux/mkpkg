@@ -1,0 +1,5 @@
+#!/bin/bash
+
+makepkg -f PKGBUILD && rm -rf src pkg
+
+exit $?

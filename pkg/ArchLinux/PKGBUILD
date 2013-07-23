@@ -52,7 +52,6 @@ package() {
 	mv publiphoto.py "$pkgdir/usr/share/publiphoto/"
 	
 	cd po
-
 	for i in *; do
 		if [ -d "$i" ]; then
 			echo "Locale : $i"
@@ -60,4 +59,8 @@ package() {
 			mv "$i/LC_MESSAGES/publiphoto.mo" "$pkgdir/usr/share/locale/$i/LC_MESSAGES/publiphoto.mo"
 		fi
 	done
+	cd ../
+	
+	mkdir -p "$pkgdir/usr/local/share/file-manager/actions"
+	mv env/nautilus/publiphoto-action.desktop "$pkgdir/usr/local/share/file-manager/actions"
 }
