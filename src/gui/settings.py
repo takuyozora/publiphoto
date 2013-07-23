@@ -24,7 +24,7 @@ class SettingView(view.View):
         view.View.__init__(self,"src/gui/glade/settingView.glade","settingBox")
         
         self.entires = self.load_objects([
-                                          "fontScale","fontPath","fontColor","haloColor",
+                                          "fontScale","haloScale","fontPath","fontColor","haloColor",
                                           "dirName"])
         
         self.fill_with_settings()
@@ -33,6 +33,7 @@ class SettingView(view.View):
     def fill_with_settings(self):
         sett = load_settings()
         self.entires["fontScale"].set_value(sett.font["scale"])
+        self.entires["haloScale"].set_value(sett.font["haloScale"])
         self.entires["fontPath"].set_filename(sett.font["path"])
         self.entires["fontColor"].set_rgba(convert_to_rgba(sett.font["color"]))
         self.entires["haloColor"].set_rgba(convert_to_rgba(sett.font["haloColor"]))
@@ -42,6 +43,7 @@ class SettingView(view.View):
     def fill_settings(self):
         sett = Settings()
         sett.font["scale"] = (float)(self.entires["fontScale"].get_value())
+        sett.font["haloScale"] = (float)(self.entires["haloScale"].get_value())
         sett.font["path"] = (str)(self.entires["fontPath"].get_filename())
         sett.font["color"] = convert_to_rgb(self.entires["fontColor"].get_rgba())
         sett.font["haloColor"] = convert_to_rgb(self.entires["haloColor"].get_rgba())

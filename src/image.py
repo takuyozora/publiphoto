@@ -86,11 +86,17 @@ def draw_text_with_halo(img, text, font, halo_size, col, halo_col):
 #         halo=halo.rotate(90, expand=0)
     
     kernel = [
-    0, 0, 0, 0, 0,
-    0, 1, 3, 1, 0,
-    0, 3, 6, 3, 0,
-    0, 1, 3, 2, 0,
-    0, 0, 0, 0, 0]
+        4, 6, 8, 6, 4,
+        6, 8, 12, 8, 6,
+        8, 12, 16, 12, 8,
+        6, 8, 12, 8, 6,
+        4, 6, 8, 6, 4]
+#     kernel = [
+#     0, 0, 0, 0, 0,
+#     0, 1, 3, 1, 0,
+#     0, 3, 6, 3, 0,
+#     0, 1, 3, 2, 0,
+#     0, 0, 0, 0, 0]
     kernelsum = sum(kernel)
     myfilter = ImageFilter.Kernel((5, 5), kernel, scale = halo_size * sum(kernel))
     blurred_halo = halo.filter(myfilter)
@@ -128,7 +134,7 @@ def draw_label(img_src,label,font=False):
     else:
         f = ImageFont.truetype(sett.font["path"],f_size)
     
-    im = draw_text_with_halo(im,label,f,0.0,sett.font["color"],sett.font["haloColor"])
+    im = draw_text_with_halo(im,label,f,(-1*(sett.font["haloScale"]/4-0.5))+0.01,sett.font["color"],sett.font["haloColor"])
     
     return im
     
