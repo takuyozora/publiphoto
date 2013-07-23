@@ -42,4 +42,4 @@ pkg/ArchLinux/pkg
 pkg/ArchLinux/src
 pkg/ArchLinux/publi*
 pkg/StandAlone
-pkg/Windows
+pkg/_Windows
