@@ -14,5 +14,12 @@ cp "publiphoto.py" "/usr/share/publiphoto/"
 cp "env/publiphoto.desktop" "/usr/share/applications/"
 cp "env/publiphoto" "/usr/bin/"
 
+for i in "po/*"; do
+	if [ -d "$i" ]; then
+		mkdir -p "/usr/share/locale/$i/LC_MESSAGES"
+		cp "po/$i/LC_MESSAGES/publiphoto.mo" "/usr/share/locale/$i/LC_MESSAGES/publiphoto.mo"
+	fi
+done
+
 
 exit $?

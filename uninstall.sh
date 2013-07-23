@@ -10,4 +10,7 @@ rm -rf "/usr/share/publiphoto"
 rm "/usr/share/applications/publiphoto.desktop"
 rm "/usr/bin/publiphoto"
 
+rm "/usr/share/locale/*/LC_MESSAGES/publiphoto.mo"
+
+
 exit $?
