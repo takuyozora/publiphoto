@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-23 14:46+0200\n"
+"POT-Creation-Date: 2013-07-23 15:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgstr ""
 msgid "Apply"
 msgstr ""
 
-#: src/gui/glade/selectPhotoView.glade:69 src/gui/glade/oppView.glade:876
+#: src/gui/glade/selectPhotoView.glade:98 src/gui/glade/oppView.glade:876
 #: src/gui/glade/manageProfileView.glade:90
 #: src/gui/glade/settingView.glade:382
 msgid "Back"
@@ -82,7 +82,7 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: src/gui/glade/selectPhotoView.glade:84
+#: src/gui/glade/selectPhotoView.glade:113
 msgid "Continue"
 msgstr ""
 
@@ -226,12 +226,12 @@ msgstr ""
 msgid "Select a font file"
 msgstr ""
 
-#: src/gui/glade/selectPhotoView.glade:101
+#: src/gui/glade/selectPhotoView.glade:130
 msgid "Select files"
 msgstr ""
 
-#: src/gui/glade/selectPhotoView.glade:36
-msgid "Selected files :"
+#: src/gui/glade/selectPhotoView.glade:41
+msgid "Select pictures"
 msgstr ""
 
 #: src/gui/glade/welcomeView.glade:96 src/gui/glade/settingView.glade:49

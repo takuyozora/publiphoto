@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: publiphoto 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-23 14:46+0200\n"
-"PO-Revision-Date: 2013-07-23 14:47+0100\n"
+"POT-Creation-Date: 2013-07-23 15:04+0200\n"
+"PO-Revision-Date: 2013-07-23 15:06+0100\n"
 "Last-Translator: Olivier Radisson <olivier [dot] radisson (at) insa-lyon "
 "[dot] fr>\n"
 "Language-Team: none\n"
@@ -70,7 +70,7 @@ msgstr "Activer"
 msgid "Apply"
 msgstr "Appliquer"
 
-#: src/gui/glade/selectPhotoView.glade:69 src/gui/glade/oppView.glade:876
+#: src/gui/glade/selectPhotoView.glade:98 src/gui/glade/oppView.glade:876
 #: src/gui/glade/manageProfileView.glade:90
 #: src/gui/glade/settingView.glade:382
 msgid "Back"
@@ -84,7 +84,7 @@ msgstr "Par défaut, un répertoire publiphoto est créé"
 msgid "Cancel"
 msgstr "Annuler"
 
-#: src/gui/glade/selectPhotoView.glade:84
+#: src/gui/glade/selectPhotoView.glade:113
 msgid "Continue"
 msgstr "Continuer"
 
@@ -226,19 +226,19 @@ msgstr "Enregistrer"
 
 #: src/gui/glade/oppView.glade:839
 msgid "Select a directory"
-msgstr "Selectionner un dossier"
+msgstr "Sélectionner un dossier"
 
 #: src/gui/glade/newProfileView.glade:663 src/gui/glade/settingView.glade:211
 msgid "Select a font file"
-msgstr "Selectionner un fichier ttf"
+msgstr "Sélectionner un fichier ttf"
 
-#: src/gui/glade/selectPhotoView.glade:101
+#: src/gui/glade/selectPhotoView.glade:130
 msgid "Select files"
 msgstr "Sélectionner des images"
 
-#: src/gui/glade/selectPhotoView.glade:36
-msgid "Selected files :"
-msgstr "Fichiers sélectionnés :"
+#: src/gui/glade/selectPhotoView.glade:41
+msgid "Select pictures"
+msgstr "Sélectionner des images"
 
 #: src/gui/glade/welcomeView.glade:96 src/gui/glade/settingView.glade:49
 msgid "Settings"
@@ -361,7 +361,7 @@ msgstr "Enregistrement"
 
 #: src/gui/process.py:114
 msgid "Saving as"
-msgstr "Enresitrement sous"
+msgstr "Enregistrement sous"
 
 #: src/gui/process.py:116
 msgid "Succes"
@@ -386,11 +386,14 @@ msgstr "Fichiers"
 
 #: src/gui/labelize.py:198
 msgid "Please, select at least one file to continue"
-msgstr "Merci de selectionner au moins un fichier avant de poursuivre"
+msgstr "Merci de sélectionner au moins un fichier avant de poursuivre"
 
 #: src/gui/labelize.py:212
 msgid "Select pictures to labelize"
-msgstr "Selectionner des images à labeliser"
+msgstr "Sélectionner des images à labeliser"
+
+#~ msgid "Selected files :"
+#~ msgstr "Fichiers sélectionnés :"
 
 #~ msgid "Scale"
 #~ msgstr "Échelle de taille"
