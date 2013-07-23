@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: publiphoto 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-22 20:29+0200\n"
-"PO-Revision-Date: 2013-07-22 20:36+0100\n"
+"POT-Creation-Date: 2013-07-23 14:46+0200\n"
+"PO-Revision-Date: 2013-07-23 14:47+0100\n"
 "Last-Translator: Olivier Radisson <olivier [dot] radisson (at) insa-lyon "
 "[dot] fr>\n"
 "Language-Team: none\n"
@@ -27,11 +27,11 @@ msgstr "<b>Auteur</b>"
 msgid "<b>Customised font</b>"
 msgstr "<b>Police personnalisée</b>"
 
-#: src/gui/glade/settingView.glade:266
+#: src/gui/glade/settingView.glade:304
 msgid "<b>Default directory</b>"
 msgstr "<b>Répertoire par défaut</b>"
 
-#: src/gui/glade/settingView.glade:84
+#: src/gui/glade/settingView.glade:91
 msgid "<b>Font</b>"
 msgstr "<b>Police</b>"
 
@@ -72,7 +72,7 @@ msgstr "Appliquer"
 
 #: src/gui/glade/selectPhotoView.glade:69 src/gui/glade/oppView.glade:876
 #: src/gui/glade/manageProfileView.glade:90
-#: src/gui/glade/settingView.glade:330
+#: src/gui/glade/settingView.glade:382
 msgid "Back"
 msgstr "Retour"
 
@@ -100,7 +100,7 @@ msgstr ""
 msgid "Current operation"
 msgstr "Opération en cours"
 
-#: src/gui/glade/settingView.glade:119
+#: src/gui/glade/settingView.glade:126
 msgid "Default font"
 msgstr "Police par défaut"
 
@@ -112,13 +112,21 @@ msgstr "Supprimer"
 msgid "Directory where files will be put :"
 msgstr "Répertoire où seront stockées les images :"
 
-#: src/gui/glade/settingView.glade:133
+#: src/gui/glade/settingView.glade:140
 msgid "Font color"
 msgstr "Couleur de la police"
 
-#: src/gui/glade/settingView.glade:147
+#: src/gui/glade/settingView.glade:112
+msgid "Font scale"
+msgstr "Échelle de la police"
+
+#: src/gui/glade/settingView.glade:154
 msgid "Halo color"
 msgstr "Couleur du halo"
+
+#: src/gui/glade/settingView.glade:225
+msgid "Halo scale"
+msgstr "Échelle du halo"
 
 #: src/gui/glade/oppView.glade:312 src/gui/glade/newProfileView.glade:333
 msgid "Height"
@@ -168,7 +176,7 @@ msgstr "Modifier"
 msgid "More informations"
 msgstr "Informations supplémentaires"
 
-#: src/gui/glade/settingView.glade:287
+#: src/gui/glade/settingView.glade:325
 msgid "Name"
 msgstr "Nom"
 
@@ -212,19 +220,15 @@ msgstr "Quitter"
 msgid "Ratio"
 msgstr "Ratio"
 
-#: src/gui/glade/newProfileView.glade:948 src/gui/glade/settingView.glade:345
+#: src/gui/glade/newProfileView.glade:948 src/gui/glade/settingView.glade:397
 msgid "Save"
 msgstr "Enregistrer"
-
-#: src/gui/glade/settingView.glade:105
-msgid "Scale"
-msgstr "Échelle de taille"
 
 #: src/gui/glade/oppView.glade:839
 msgid "Select a directory"
 msgstr "Selectionner un dossier"
 
-#: src/gui/glade/newProfileView.glade:663 src/gui/glade/settingView.glade:204
+#: src/gui/glade/newProfileView.glade:663 src/gui/glade/settingView.glade:211
 msgid "Select a font file"
 msgstr "Selectionner un fichier ttf"
 
@@ -236,7 +240,7 @@ msgstr "Sélectionner des images"
 msgid "Selected files :"
 msgstr "Fichiers sélectionnés :"
 
-#: src/gui/glade/welcomeView.glade:96 src/gui/glade/settingView.glade:42
+#: src/gui/glade/welcomeView.glade:96 src/gui/glade/settingView.glade:49
 msgid "Settings"
 msgstr "Paramètres"
 
@@ -303,11 +307,11 @@ msgstr "Confirmer l'action"
 msgid "Are you sure to delete thie profile %s ?"
 msgstr "Êtes vous sûr de supprimer ce profil : %s ?"
 
-#: src/gui/settings.py:52
+#: src/gui/settings.py:55
 msgid "Confirm saving"
 msgstr "Confirmer l'enregistrement"
 
-#: src/gui/settings.py:54
+#: src/gui/settings.py:57
 msgid "Are you sure to replace settings ?"
 msgstr "Êtes vous sûr de remplacer les paramètres ?"
 
@@ -387,3 +391,6 @@ msgstr "Merci de selectionner au moins un fichier avant de poursuivre"
 #: src/gui/labelize.py:212
 msgid "Select pictures to labelize"
 msgstr "Selectionner des images à labeliser"
+
+#~ msgid "Scale"
+#~ msgstr "Échelle de taille"

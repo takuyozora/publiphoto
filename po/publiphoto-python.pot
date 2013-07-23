@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-22 20:29+0200\n"
+"POT-Creation-Date: 2013-07-23 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,11 +50,11 @@ msgstr ""
 msgid "Are you sure to delete thie profile %s ?"
 msgstr ""
 
-#: src/gui/settings.py:52
+#: src/gui/settings.py:55
 msgid "Confirm saving"
 msgstr ""
 
-#: src/gui/settings.py:54
+#: src/gui/settings.py:57
 msgid "Are you sure to replace settings ?"
 msgstr ""
 

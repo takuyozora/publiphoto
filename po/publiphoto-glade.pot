@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-22 20:29+0200\n"
+"POT-Creation-Date: 2013-07-23 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,11 +25,11 @@ msgstr ""
 msgid "<b>Customised font</b>"
 msgstr ""
 
-#: src/gui/glade/settingView.glade:266
+#: src/gui/glade/settingView.glade:304
 msgid "<b>Default directory</b>"
 msgstr ""
 
-#: src/gui/glade/settingView.glade:84
+#: src/gui/glade/settingView.glade:91
 msgid "<b>Font</b>"
 msgstr ""
 
@@ -70,7 +70,7 @@ msgstr ""
 
 #: src/gui/glade/selectPhotoView.glade:69 src/gui/glade/oppView.glade:876
 #: src/gui/glade/manageProfileView.glade:90
-#: src/gui/glade/settingView.glade:330
+#: src/gui/glade/settingView.glade:382
 msgid "Back"
 msgstr ""
 
@@ -98,7 +98,7 @@ msgstr ""
 msgid "Current operation"
 msgstr ""
 
-#: src/gui/glade/settingView.glade:119
+#: src/gui/glade/settingView.glade:126
 msgid "Default font"
 msgstr ""
 
@@ -110,12 +110,20 @@ msgstr ""
 msgid "Directory where files will be put :"
 msgstr ""
 
-#: src/gui/glade/settingView.glade:133
+#: src/gui/glade/settingView.glade:140
 msgid "Font color"
 msgstr ""
 
-#: src/gui/glade/settingView.glade:147
+#: src/gui/glade/settingView.glade:112
+msgid "Font scale"
+msgstr ""
+
+#: src/gui/glade/settingView.glade:154
 msgid "Halo color"
+msgstr ""
+
+#: src/gui/glade/settingView.glade:225
+msgid "Halo scale"
 msgstr ""
 
 #: src/gui/glade/oppView.glade:312 src/gui/glade/newProfileView.glade:333
@@ -162,7 +170,7 @@ msgstr ""
 msgid "More informations"
 msgstr ""
 
-#: src/gui/glade/settingView.glade:287
+#: src/gui/glade/settingView.glade:325
 msgid "Name"
 msgstr ""
 
@@ -206,19 +214,15 @@ msgstr ""
 msgid "Ratio"
 msgstr ""
 
-#: src/gui/glade/newProfileView.glade:948 src/gui/glade/settingView.glade:345
+#: src/gui/glade/newProfileView.glade:948 src/gui/glade/settingView.glade:397
 msgid "Save"
-msgstr ""
-
-#: src/gui/glade/settingView.glade:105
-msgid "Scale"
 msgstr ""
 
 #: src/gui/glade/oppView.glade:839
 msgid "Select a directory"
 msgstr ""
 
-#: src/gui/glade/newProfileView.glade:663 src/gui/glade/settingView.glade:204
+#: src/gui/glade/newProfileView.glade:663 src/gui/glade/settingView.glade:211
 msgid "Select a font file"
 msgstr ""
 
@@ -230,7 +234,7 @@ msgstr ""
 msgid "Selected files :"
 msgstr ""
 
-#: src/gui/glade/welcomeView.glade:96 src/gui/glade/settingView.glade:42
+#: src/gui/glade/welcomeView.glade:96 src/gui/glade/settingView.glade:49
 msgid "Settings"
 msgstr ""
 
