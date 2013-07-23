@@ -37,6 +37,7 @@ class SettingView(view.View):
         self.entires["fontColor"].set_rgba(convert_to_rgba(sett.font["color"]))
         self.entires["haloColor"].set_rgba(convert_to_rgba(sett.font["haloColor"]))
         self.entires["dirName"].set_text(sett.dirName)
+        self.show_all()
      
     def fill_settings(self):
         sett = Settings()

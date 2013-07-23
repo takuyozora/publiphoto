@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import os
+import sys
 from os import path
 import mimetypes
 from src import config 
@@ -13,7 +14,7 @@ from urllib.parse import unquote
 ######
 
 def convert_to_rgba(color):
-    return Gdk.RGBA(color[0],color[1],color[2],0)
+    return Gdk.RGBA(color[0]/255,color[1]/255,color[2]/255,0)
 
 def convert_to_rgb(rgba):
     return ((int)(255*rgba.red),(int)(255*rgba.green),(int)(255*rgba.blue))
