@@ -3,6 +3,9 @@
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageChops
 import math
 
+import cairo
+from gi.repository import Gdk, GdkPixbuf
+
 from src.settings import load_settings
 
 #######
@@ -11,6 +14,46 @@ from src.settings import load_settings
 #  * Le kernel sert à créer un effet de halo
 ####### 
 
+# def pil_to_gdk(img):
+#     arr = numpy.array(img)
+#     return Gdk.pixbuf_new_from_array(arr, Gdk.COLORSPACE_RGBA, 16)
+
+def gtk_to_pil(pb):
+    width,height = pb.get_width(),pb.get_height()
+    return Image.fromstring("RGB",(width,height),pb.get_pixels() )
+
+def draw_label_cairo(img_path,label,font=False):
+    sett = load_settings()
+#     im=img_src
+#     x = im.size[0]
+#     y = im.size[1]
+# 
+#     im = pil_to_gdk(img_src)
+    
+#     if font is not False and font is not None:
+#         f = ImageFont.truetype(font,f_size)
+#     else:
+#         f = ImageFont.truetype(sett.font["path"],f_size)
+#     
+#     im = draw_text_with_halo(im,label,f,0.3,sett.font["color"],sett.font["haloColor"])
+    
+    im = GdkPixbuf.Pixbuf.new_from_file(img_path)
+    x = im.get_width()
+    y = im.get_height()
+    size = math.sqrt(x*y)
+    f_size = (int)((size/60) * sett.font["scale"])
+    surface = cairo.ImageSurface(0,x,y)
+    
+    ct = cairo.Context(surface)
+    ct2 = Gdk.CairoContext(ct)
+    ct2.set_source_pixbuf(im,0,0)
+
+    
+    drawable = GdkPixbuf.render_pixmap_and_mask(alpha_threshold=127)[0]
+    
+    context = Cairo.Context(im)
+    
+    return im
 
 def draw_text_with_halo(img, text, font, halo_size, col, halo_col):
     vertical = False
@@ -30,9 +73,11 @@ def draw_text_with_halo(img, text, font, halo_size, col, halo_col):
     ## Calcul des positions pour le text
     w = img.size[0]
     h = img.size[1]
-    p_y = (y / 1000) * 970
+    p_y = (y / 1000) * 990 - font.getsize(text)[1]
     p_x = x/100
-    position = (p_x,p_y)
+#     p_y = y/2
+#     p_x = x/2
+    position = ((int)(p_x),(int)(p_y))
     halo = Image.new('RGBA', (w,h), (0, 0, 0, 0))
     ImageDraw.Draw(halo).text(position, text, font = font, fill = halo_col)
 #     halo2=halo
@@ -83,7 +128,7 @@ def draw_label(img_src,label,font=False):
     else:
         f = ImageFont.truetype(sett.font["path"],f_size)
     
-    im = draw_text_with_halo(im,label,f,0.3,sett.font["color"],sett.font["haloColor"])
+    im = draw_text_with_halo(im,label,f,0.0,sett.font["color"],sett.font["haloColor"])
     
     return im
     
