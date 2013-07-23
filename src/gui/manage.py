@@ -95,22 +95,22 @@ class NewProfileView(view.View):
             
             
         
-    def on_size_toggled(self,widget):
+    def on_size_toggled(self,widget,n):
         self.sizeBox.set_sensitive(widget.get_active())
     
-    def on_author_toggled(self,widget):
+    def on_author_toggled(self,widget,n):
         self.authorBox.set_sensitive(widget.get_active())
     
-    def on_licence_toggled(self,widget):
+    def on_licence_toggled(self,widget,n):
         self.licenceBox.set_sensitive(widget.get_active())
         
-    def on_font_toggled(self,widget):
+    def on_font_toggled(self,widget,n):
         self.fontBox.set_sensitive(widget.get_active())
         
-    def on_rename_toggled(self,widget):
+    def on_rename_toggled(self,widget,n):
         self.renameBox.set_sensitive(widget.get_active())
         
-    def on_dir_toggled(self,widget):
+    def on_dir_toggled(self,widget,n):
         active = widget.get_active()
         self.dirBox.set_sensitive(active)
         

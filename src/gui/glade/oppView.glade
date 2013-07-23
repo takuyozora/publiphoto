@@ -11,31 +11,6 @@
     <property name="can_focus">False</property>
     <property name="stock">gtk-ok</property>
   </object>
-  <object class="GtkImage" id="image3">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="stock">gtk-add</property>
-  </object>
-  <object class="GtkImage" id="image4">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="stock">gtk-add</property>
-  </object>
-  <object class="GtkImage" id="image5">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="stock">gtk-add</property>
-  </object>
-  <object class="GtkImage" id="image6">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="stock">gtk-add</property>
-  </object>
-  <object class="GtkImage" id="image7">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="stock">gtk-add</property>
-  </object>
   <object class="GtkListStore" id="liststore1">
     <columns>
       <!-- column-name licence -->
@@ -158,16 +133,10 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkCheckButton" id="toggleSize">
-                        <property name="label" translatable="yes">Activate</property>
+                      <object class="GtkSwitch" id="toggleSize">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
-                        <property name="receives_default">False</property>
-                        <property name="image">image4</property>
-                        <property name="xalign">0</property>
-                        <property name="image_position">right</property>
-                        <property name="draw_indicator">False</property>
-                        <signal name="toggled" handler="on_size_toggled" swapped="no"/>
+                        <signal name="notify::active" handler="on_size_toggled" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -368,16 +337,10 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkCheckButton" id="toggleAuthor">
-                        <property name="label" translatable="yes">Activate</property>
+                      <object class="GtkSwitch" id="toggleAuthor">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
-                        <property name="receives_default">False</property>
-                        <property name="image">image3</property>
-                        <property name="xalign">0</property>
-                        <property name="image_position">right</property>
-                        <property name="draw_indicator">False</property>
-                        <signal name="toggled" handler="on_author_toggled" swapped="no"/>
+                        <signal name="notify::active" handler="on_author_toggled" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -474,16 +437,10 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkCheckButton" id="toggleLicence">
-                        <property name="label" translatable="yes">Activate</property>
+                      <object class="GtkSwitch" id="toggleLicence">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
-                        <property name="receives_default">False</property>
-                        <property name="image">image5</property>
-                        <property name="xalign">0</property>
-                        <property name="image_position">right</property>
-                        <property name="draw_indicator">False</property>
-                        <signal name="toggled" handler="on_licence_toggled" swapped="no"/>
+                        <signal name="notify::active" handler="on_licence_toggled" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -571,16 +528,10 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkCheckButton" id="toggleRename">
-                        <property name="label" translatable="yes">Activate</property>
+                      <object class="GtkSwitch" id="toggleRename">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
-                        <property name="receives_default">False</property>
-                        <property name="image">image6</property>
-                        <property name="xalign">0</property>
-                        <property name="image_position">right</property>
-                        <property name="draw_indicator">False</property>
-                        <signal name="toggled" handler="on_rename_toggled" swapped="no"/>
+                        <signal name="notify::active" handler="on_rename_toggled" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -768,17 +719,11 @@ Tips : %n is replaces by the file number.</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkCheckButton" id="toggleDir">
-                        <property name="label" translatable="yes">Activate</property>
+                      <object class="GtkSwitch" id="toggleDir">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
-                        <property name="receives_default">False</property>
-                        <property name="image">image7</property>
-                        <property name="xalign">0</property>
-                        <property name="image_position">right</property>
                         <property name="active">True</property>
-                        <property name="draw_indicator">False</property>
-                        <signal name="toggled" handler="on_dir_toggled" swapped="no"/>
+                        <signal name="notify::active" handler="on_dir_toggled" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>
