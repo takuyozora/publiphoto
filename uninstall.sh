@@ -11,6 +11,7 @@ rm "/usr/share/applications/publiphoto.desktop"
 rm "/usr/bin/publiphoto"
 
 rm "/usr/share/locale/*/LC_MESSAGES/publiphoto.mo"
+rm "/usr/local/share/file-manager/actions/publiphoto-action.desktop"
 
 
 exit $?

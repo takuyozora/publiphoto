@@ -21,5 +21,8 @@ for i in "po/*"; do
 	fi
 done
 
+mkdir -p "/usr/local/share/file-manager/actions"
+cp "env/nautilus/publiphoto-action.desktop" "/usr/local/share/file-manager/actions"
+
 
 exit $?
