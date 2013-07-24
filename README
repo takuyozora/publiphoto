@@ -9,3 +9,7 @@
 == INSTALLATION
 
 Voir le fichier INSTALL
+
+== DESINSTALATION
+
+# ./uninstall
