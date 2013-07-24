@@ -1,0 +1,30 @@
+#!/bin/bash
+#	Prepare DEBIAN package fakeroot
+
+pkgdir="pkg/Debian/package/"
+srcdir="../../"
+
+cd "$srcdir"
+
+mkdir -p "$pkgdir/usr/bin"
+cp env/publiphoto "$pkgdir/usr/bin/"
+
+mkdir -p "$pkgdir/usr/share/applications/"
+cp env/publiphoto.desktop "$pkgdir/usr/share/applications/"
+
+mkdir -p "$pkgdir/usr/share/publiphoto"
+cp -R src "$pkgdir/usr/share/publiphoto/"
+cp publiphoto.py "$pkgdir/usr/share/publiphoto/"
+
+cd po
+for i in *; do
+	if [ -d "$i" ]; then
+		echo "Locale : $i"
+		mkdir -p "$pkgdir/usr/share/locale/$i/LC_MESSAGES"
+		cp "$i/LC_MESSAGES/publiphoto.mo" "$pkgdir/usr/share/locale/$i/LC_MESSAGES/publiphoto.mo"
+	fi
+done
+cd ../
+
+mkdir -p "$pkgdir/usr/local/share/file-manager/actions"
+cp env/nautilus/publiphoto-action.desktop "$pkgdir/usr/local/share/file-manager/actions"
