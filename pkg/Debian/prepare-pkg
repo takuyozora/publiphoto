@@ -20,8 +20,8 @@ cd po
 for i in *; do
 	if [ -d "$i" ]; then
 		echo "Locale : $i"
-		mkdir -p "$pkgdir/usr/share/locale/$i/LC_MESSAGES"
-		cp "$i/LC_MESSAGES/publiphoto.mo" "$pkgdir/usr/share/locale/$i/LC_MESSAGES/publiphoto.mo"
+		mkdir -p "../$pkgdir/usr/share/locale/$i/LC_MESSAGES"
+		cp "$i/LC_MESSAGES/publiphoto.mo" "../$pkgdir/usr/share/locale/$i/LC_MESSAGES/publiphoto.mo"
 	fi
 done
 cd ../
