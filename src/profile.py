@@ -30,19 +30,34 @@ class Profile:
         self.font = False
         self.rename = False
         self.dir = False
+        self._version = 1.0
+        self._compatibility = [1.0]
         
     def save(self,name):
         with open(os.path.join(PROFILE_PATH,name+".profile"),'wb+') as file:
             pickle.dump(self,file)
+            
+def load_compatibility(p):
+    actual_p = Profile()
+    if p._version == actual_p._version:
+        return p
+    elif p._version in actual_p._compatible:
+        ## Try to return a compatible profile object
+        return sett ## Actualy only one version is compatible
+    else:
+        ## Can't load this profile
+        return False
 
 def load_profile(name):
     with open(os.path.join(PROFILE_PATH,name+".profile"),'rb') as f:
-        return pickle.load(f)
+        return load_compatibility(pickle.load(f))
     
 def get_profiles():
     profiles = []
     for elem in os.listdir(PROFILE_PATH):
-        profiles.append(elem.replace(".profile",""))
+        p = elem.replace(".profile","")
+        if p is not False:
+            profiles.append(p)
     return profiles
 
 def del_profile(name):
