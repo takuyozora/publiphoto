@@ -11,7 +11,6 @@ LICENCES.append("Creative Commons By-Nd")
 LICENCES.append("Creative Commons By-Sa-Nc")
 LICENCES.append("Creative Commons By-Nd-Nc")
 LICENCES.append("Copyleft")
-LICENCES.append("Copyright")
 
 # PUBLIPHOTO_DIRNAME = "publiphoto"
 # 
