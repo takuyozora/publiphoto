@@ -12,6 +12,13 @@ from src.gui import view
 from src import tools
 from src import image
 
+
+######
+# This module process pictures
+# It contains two class :
+#  * A thread which operate one pictures
+#  * A view which show informations to the user
+###### 
 ######
 # Ce module est celui qui gère le traitement par lot des images
 # Il dispose de deux classes : 
@@ -104,11 +111,11 @@ class RunningProcess(threading.Thread):
                 self.view.update_action(_("Saving")+" ...")
                 if self.args["rename"] not in (False,None):
                     split = basename.split('.')
-                    if self.args["rename"][2] != "": # Renomme le fichier
+                    if self.args["rename"][2] != "": # Rename the picture
                         sans_ext = self.args["rename"][2]
                     else:
                         sans_ext = ".".join(split[:-1])
-                    if len(split) < 2: # Ajout de l'extension jpeg si la photo n'en n'a pas
+                    if len(split) < 2: # Add jpeg extension if the file name hasn't any one
                         split.append("jpeg")
                     basename = self.args["rename"][0] + sans_ext + self.args["rename"][1] + "." + split[-1]
                     basename = basename.replace("%n", "{0:04d}".format(n_finished)) # format number with 4 digit 

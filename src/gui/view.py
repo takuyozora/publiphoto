@@ -4,6 +4,9 @@ from gi.repository import Gtk
 from src.tools import root_path
 
 ######
+# This is the main class for a view
+######
+######
 # Classe de base pour une view
 ######
 

@@ -9,11 +9,22 @@ from src.settings import load_settings, Settings
 from src.tools import convert_to_rgb, convert_to_rgba
 
 ######
+# This module can set settings :
+# * Font
+#    -- Size
+#    -- Color
+#    -- HaloSize
+#    -- HaloColor
+#    -- Font path
+# * Default directory name
+######
+######
 # Ce module permet de gérer les préférences :
 #  * Police 
 #    -- Taille
 #    -- Couleur
 #    -- Halo
+#    -- Couleur du Halo
 #    -- Font
 #  * Nom du répertoire par défaut
 ######
