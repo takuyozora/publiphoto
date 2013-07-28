@@ -9,11 +9,18 @@ from src.tools import numbify
 from src.gui import view
 from src.profile import get_profiles, del_profile, Profile, load_profile
 
+
 ######
-# Ce module s'occupe de gérer les profiles, il permet d'ajouter modifier ou supprimer les profiles
+# This module manages profiles, it can add or delete profiles
+# It contains two class :
+#  * NewProfileView which can create or edit a profile
+#  * ManageProfileView which list profiles and allow user to delte a profile
+######
+######
+# Ce module s'occupe de gérer les profils, il permet d'ajouter modifier ou supprimer les profils
 # Il comporte deux classes :
-#  * NewProfileView qui sert à la création et à l'édition de profile
-#  * ManageProfileView qui sert à lister et supprimer les profiles
+#  * NewProfileView qui sert à la création et à l'édition de profil
+#  * ManageProfileView qui sert à lister et supprimer les profils
 ######
 
 class NewProfileView(view.View):

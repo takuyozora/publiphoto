@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 
 ######
+# Configuration module
+######
+######
 # Module de configuration, attention à ne pas introduire de valeur erronnées
 ######
 

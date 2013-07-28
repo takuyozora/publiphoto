@@ -10,6 +10,10 @@ from src.tools import root_path
 
 
 import os
+
+######
+# Main class of the GUI, manages views
+######
 ######
 # Classe de base du programme, gère le changement de view
 ######

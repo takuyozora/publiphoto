@@ -13,6 +13,12 @@ from src import profile
 import os
 
 ######
+# This module help to select pictures and settings for the labelization
+# There is two class :
+#  * OpperationView get user settings for pictures
+#  * SelectPhotoView get picutres path
+######
+######
 # Ce module est celui qui permet de sélectionner les images et les paramètres du traitement
 # Il dispose de deux classes : 
 #  * OpperationView se charge de récupérer les paramètres voules par l'utilisateur
@@ -20,14 +26,6 @@ import os
 ######
 
 class OpperationView(view.View):
-    """
-        Profile view
-         This is the main view of the programme
-          Allow you to :
-           * Connect to a profile host
-           * See log
-           * Switch to edit profile view
-    """
     
     def __init__(self,parent,files):
         view.View.__init__(self,"src/gui/glade/oppView.glade","oppBox")
@@ -164,14 +162,6 @@ class OpperationView(view.View):
             self.font = p.font
 
 class SelectPhotoView(view.View):
-    """
-        Profile view
-         This is the main view of the programme
-          Allow you to :
-           * Connect to a profile host
-           * See log
-           * Switch to edit profile view
-    """
     
     def __init__(self,parent,files=[]):
         view.View.__init__(self,"src/gui/glade/selectPhotoView.glade","selectBox")

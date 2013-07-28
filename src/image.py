@@ -9,6 +9,11 @@ from gi.repository import Gdk, GdkPixbuf
 from src.settings import load_settings
 
 #######
+# This module work on pictures
+#  * Commented parts are some functionalities which can be reintroduce
+#  * Kernel part is here to create an halo
+#######
+#######
 # Ce module sert à traiter les images
 #  * Les parties commentées dans la fonction de halo permettent l'écriture en verticale si besoin
 #  * Le kernel sert à créer un effet de halo

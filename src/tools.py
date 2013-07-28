@@ -10,6 +10,9 @@ from gi.repository import Gdk
 from urllib.parse import unquote
 
 ######
+# This module contains some function which help to manage data
+######
+######
 # Ce module comporte un lot de fonctions utiles qui permettent de traiter des donnees
 ######
 

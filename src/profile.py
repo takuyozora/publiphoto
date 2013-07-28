@@ -5,7 +5,11 @@ import os
 import pickle
 
 ######
-# Ce module permet de gérer les profiles
+# This module help to manage profiles
+# It saves and load profiles from a fixed repertory, due to the current system
+######
+######
+# Ce module permet de gérer les profils
 # Il enregistre et charge les profiles depuis un répertoire fixé, s'adaptant à la plateforme
 ######
 

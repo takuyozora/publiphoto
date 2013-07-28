@@ -5,8 +5,12 @@ import os
 import pickle
 
 ######
-# Ce module permet de gérer les profiles
-# Il enregistre et charge les profiles depuis un répertoire fixé, s'adaptant à la plateforme
+# This module help to manage settings
+# It saves and load settings from a fixed repertory, due to the current system
+######
+######
+# Ce module permet de gérer les préférences
+# Il enregistre et charge les préférences depuis un répertoire fixé, s'adaptant à la plateforme
 ######
 
 if sys.platform.startswith('linux'):
