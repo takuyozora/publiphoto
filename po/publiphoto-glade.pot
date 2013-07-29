@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-29 11:55+0200\n"
+"POT-Creation-Date: 2013-07-29 12:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,58 +17,44 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:330
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:364
 #: src/gui/glade/oppView.glade:330 src/gui/glade/newProfileView.glade:364
 #: src/gui/glade/genericProfileView.glade:327
 msgid "<b>Author</b>"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:556
 #: src/gui/glade/newProfileView.glade:556
 #: src/gui/glade/genericProfileView.glade:1009
 msgid "<b>Customised font</b>"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/settingView.glade:304
 #: src/gui/glade/settingView.glade:304
 msgid "<b>Default directory</b>"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/settingView.glade:91
 #: src/gui/glade/settingView.glade:91
 msgid "<b>Font</b>"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:430
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:465
 #: src/gui/glade/oppView.glade:430 src/gui/glade/newProfileView.glade:465
 #: src/gui/glade/genericProfileView.glade:428
 msgid "<b>Licence</b>"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:712
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:798
 #: src/gui/glade/oppView.glade:712 src/gui/glade/newProfileView.glade:798
 #: src/gui/glade/genericProfileView.glade:610
 msgid "<b>Output directory</b>"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:81
 #: src/gui/glade/newProfileView.glade:81
 #: src/gui/glade/genericProfileView.glade:703
 msgid "<b>Profile name</b>"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:521
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:658
 #: src/gui/glade/oppView.glade:521 src/gui/glade/newProfileView.glade:658
 #: src/gui/glade/genericProfileView.glade:533
 msgid "<b>Rename</b>"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:126
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:161
 #: src/gui/glade/oppView.glade:126 src/gui/glade/newProfileView.glade:161
 #: src/gui/glade/genericProfileView.glade:123
 msgid "<b>Size</b>"
@@ -83,15 +69,10 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:836
 #: src/gui/glade/oppView.glade:836 src/gui/glade/genericProfileView.glade:1120
 msgid "Apply"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/selectPhotoView.glade:86
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:821
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/manageProfileView.glade:90
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/settingView.glade:382
 #: src/gui/glade/selectPhotoView.glade:86 src/gui/glade/oppView.glade:821
 #: src/gui/glade/genericProfileView.glade:1105
 #: src/gui/glade/genericProfileView.glade:1149
@@ -100,57 +81,46 @@ msgstr ""
 msgid "Back"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:748
 #: src/gui/glade/oppView.glade:748
 msgid "By default, a publiphoto directory is create"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:867
 #: src/gui/glade/newProfileView.glade:867
 msgid "Cancel"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/selectPhotoView.glade:101
 #: src/gui/glade/selectPhotoView.glade:101
 msgid "Continue"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:21
 #: src/gui/glade/oppView.glade:21
 msgid "Creative Common By"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:24
 #: src/gui/glade/oppView.glade:24
 msgid "Creative Commons By-Sa"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/processView.glade:123
 #: src/gui/glade/processView.glade:123
 msgid "Current operation"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/settingView.glade:126
 #: src/gui/glade/settingView.glade:126
 msgid "Default font"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/manageProfileView.glade:138
 #: src/gui/glade/manageProfileView.glade:138
 msgid "Delete"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:769
 #: src/gui/glade/oppView.glade:769 src/gui/glade/genericProfileView.glade:1242
 msgid "Directory where files will be put :"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/settingView.glade:140
 #: src/gui/glade/settingView.glade:140
 msgid "Font color"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/settingView.glade:112
 #: src/gui/glade/settingView.glade:112
 msgid "Font scale"
 msgstr ""
@@ -159,24 +129,19 @@ msgstr ""
 msgid "GNU GPL v3"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/settingView.glade:154
 #: src/gui/glade/settingView.glade:154
 msgid "Halo color"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/settingView.glade:225
 #: src/gui/glade/settingView.glade:225
 msgid "Halo scale"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:281
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:297
 #: src/gui/glade/oppView.glade:281 src/gui/glade/newProfileView.glade:297
 #: src/gui/glade/genericProfileView.glade:278
 msgid "Height"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:834
 #: src/gui/glade/newProfileView.glade:834
 #: src/gui/glade/genericProfileView.glade:779
 msgid ""
@@ -184,101 +149,79 @@ msgid ""
 "initial directory."
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:164
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:199
 #: src/gui/glade/oppView.glade:164 src/gui/glade/newProfileView.glade:199
 #: src/gui/glade/genericProfileView.glade:161
 msgid "Keep"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:658
 #: src/gui/glade/oppView.glade:658 src/gui/glade/genericProfileView.glade:898
 msgid ""
 "Keep this one empty to conserv file name.\n"
 "Tips : %n is replaces by the file number."
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/welcomeView.glade:47
 #: src/gui/glade/welcomeView.glade:52
 msgid "Labelize pictures"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:470
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:505
 #: src/gui/glade/oppView.glade:470 src/gui/glade/newProfileView.glade:505
 #: src/gui/glade/genericProfileView.glade:468
 msgid "Licence to apply :"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:69
 #: src/gui/glade/oppView.glade:69 src/gui/glade/genericProfileView.glade:1194
 msgid "Load a profile"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/welcomeView.glade:65
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/manageProfileView.glade:41
 #: src/gui/glade/welcomeView.glade:70 src/gui/glade/manageProfileView.glade:41
 msgid "Manage profiles"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/manageProfileView.glade:121
 #: src/gui/glade/manageProfileView.glade:121
 msgid "Modify"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/processView.glade:225
 #: src/gui/glade/processView.glade:225
 msgid "More informations"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/settingView.glade:325
 #: src/gui/glade/settingView.glade:325
 msgid "Name"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:369
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:404
 #: src/gui/glade/oppView.glade:369 src/gui/glade/newProfileView.glade:404
 #: src/gui/glade/genericProfileView.glade:366
 msgid "Name :"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/manageProfileView.glade:105
 #: src/gui/glade/manageProfileView.glade:105
 msgid "New"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:34
 #: src/gui/glade/newProfileView.glade:34
 #: src/gui/glade/genericProfileView.glade:44
 msgid "New profile"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:48
 #: src/gui/glade/oppView.glade:48
 msgid "Operations to apply"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:596
 #: src/gui/glade/newProfileView.glade:596
 #: src/gui/glade/genericProfileView.glade:1049
 msgid "Path to the font file :"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:562
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:699
 #: src/gui/glade/oppView.glade:562 src/gui/glade/newProfileView.glade:699
 #: src/gui/glade/genericProfileView.glade:802
 #: src/gui/glade/genericProfileView.glade:930
 msgid "Prefix"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/processView.glade:32
 #: src/gui/glade/processView.glade:32
 msgid "Processing ..."
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/processView.glade:276
 #: src/gui/glade/processView.glade:276
 msgid "Processing log"
 msgstr ""
@@ -294,95 +237,71 @@ msgid ""
 "free licence."
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/processView.glade:194
 #: src/gui/glade/processView.glade:194
 msgid "Quit"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:189
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:224
 #: src/gui/glade/oppView.glade:189 src/gui/glade/newProfileView.glade:224
 #: src/gui/glade/genericProfileView.glade:186
 msgid "Ratio"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:882
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/settingView.glade:397
 #: src/gui/glade/newProfileView.glade:882
 #: src/gui/glade/genericProfileView.glade:1164
 #: src/gui/glade/settingView.glade:397
 msgid "Save"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:784
 #: src/gui/glade/oppView.glade:784 src/gui/glade/genericProfileView.glade:1258
 msgid "Select a directory"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:609
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/settingView.glade:211
 #: src/gui/glade/newProfileView.glade:609
 #: src/gui/glade/genericProfileView.glade:1062
 #: src/gui/glade/settingView.glade:211
 msgid "Select a font file"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/selectPhotoView.glade:118
 #: src/gui/glade/selectPhotoView.glade:118
 msgid "Select files"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/selectPhotoView.glade:42
 #: src/gui/glade/selectPhotoView.glade:42
 msgid "Select pictures"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/welcomeView.glade:96
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/settingView.glade:49
 #: src/gui/glade/welcomeView.glade:101 src/gui/glade/settingView.glade:49
 msgid "Settings"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/processView.glade:179
 #: src/gui/glade/processView.glade:179
 msgid "Stop"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:626
 #: src/gui/glade/oppView.glade:626 src/gui/glade/genericProfileView.glade:866
 msgid "Substitution"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:577
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:714
 #: src/gui/glade/oppView.glade:577 src/gui/glade/newProfileView.glade:714
 #: src/gui/glade/genericProfileView.glade:817
 #: src/gui/glade/genericProfileView.glade:945
 msgid "Suffix"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:100
 #: src/gui/glade/newProfileView.glade:100
 #: src/gui/glade/genericProfileView.glade:722
 msgid "Unique name for the profile :"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:267
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:266
 #: src/gui/glade/oppView.glade:267 src/gui/glade/newProfileView.glade:266
 #: src/gui/glade/genericProfileView.glade:264
 msgid "Width"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/processView.glade:82
 #: src/gui/glade/processView.glade:82
 msgid "Working on :"
 msgstr ""
 
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:203
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:217
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:238
-#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:252
 #: src/gui/glade/oppView.glade:203 src/gui/glade/oppView.glade:217
 #: src/gui/glade/newProfileView.glade:238
 #: src/gui/glade/newProfileView.glade:252
