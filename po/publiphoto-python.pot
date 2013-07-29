@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-29 03:16+0200\n"
+"POT-Creation-Date: 2013-07-29 10:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,27 +18,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:127
-#: src/gui/manage.py:134 src/gui/profile.py:243
+#: src/gui/manage.py:134 src/gui/profile.py:256
 msgid "A profile already has this name"
 msgstr ""
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:129
-#: src/gui/manage.py:136 src/gui/profile.py:245
+#: src/gui/manage.py:136 src/gui/profile.py:258
 msgid "Are you sure to save this profile and lose the older one ?"
 msgstr ""
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:166
-#: src/gui/manage.py:173 src/gui/profile.py:255
+#: src/gui/manage.py:173 src/gui/profile.py:268
 msgid "Succed to create the profile"
 msgstr ""
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:171
-#: src/gui/manage.py:178 src/gui/profile.py:260
+#: src/gui/manage.py:178 src/gui/profile.py:273
 msgid "An error occured"
 msgstr ""
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:173
-#: src/gui/manage.py:180 src/gui/profile.py:262
+#: src/gui/manage.py:180 src/gui/profile.py:275
 msgid "Unable to save the profile"
 msgstr ""
 
@@ -192,21 +192,22 @@ msgstr ""
 msgid "Select pictures to labelize"
 msgstr ""
 
-#: src/gui/profile.py:171
+#: src/gui/profile.py:173
 msgid "Operations to apply"
 msgstr ""
 
-#: src/gui/profile.py:199
+#: src/gui/profile.py:212
 msgid ""
 "<i><span size='small'>If you want to automaticly create a new directory "
-"click <a href='#'>here</a></span></i>"
+"click <a href='auto'>here</a></span></i>"
 msgstr ""
 
-#: src/gui/profile.py:201
+#: src/gui/profile.py:214
 msgid ""
-"<i><span size='small'>Currently a new directory will be create</span></i>"
+"<i><span size='small'>Currently a new directory will be create, if you don't "
+"want, click <a href='unauto'>here</a></span></i>"
 msgstr ""
 
-#: src/gui/profile.py:223
+#: src/gui/profile.py:236
 msgid "Edit profile"
 msgstr ""

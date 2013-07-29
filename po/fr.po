@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: publiphoto 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-29 03:16+0200\n"
-"PO-Revision-Date: 2013-07-29 02:52+0100\n"
+"POT-Creation-Date: 2013-07-29 10:53+0200\n"
+"PO-Revision-Date: 2013-07-29 10:54+0100\n"
 "Last-Translator: Olivier Radisson <olivier [dot] radisson (at) insa-lyon "
 "[dot] fr>\n"
 "Language-Team: none\n"
@@ -28,7 +28,7 @@ msgstr "<b>Auteur</b>"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:556
 #: src/gui/glade/newProfileView.glade:556
-#: src/gui/glade/genericProfileView.glade:1010
+#: src/gui/glade/genericProfileView.glade:1008
 msgid "<b>Customised font</b>"
 msgstr "<b>Police personnalisée</b>"
 
@@ -76,7 +76,7 @@ msgstr "<b>Renommer</b>"
 msgid "<b>Size</b>"
 msgstr "<b>Dimensions</b>"
 
-#: src/gui/glade/genericProfileView.glade:1198 src/gui/profile.py:201
+#: src/gui/glade/genericProfileView.glade:1222
 msgid ""
 "<i><span size='small'>Currently a new directory will be create</span></i>"
 msgstr ""
@@ -84,7 +84,7 @@ msgstr ""
 "span></i>"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:836
-#: src/gui/glade/oppView.glade:836 src/gui/glade/genericProfileView.glade:1121
+#: src/gui/glade/oppView.glade:836 src/gui/glade/genericProfileView.glade:1119
 msgid "Apply"
 msgstr "Appliquer"
 
@@ -93,8 +93,8 @@ msgstr "Appliquer"
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/manageProfileView.glade:90
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/settingView.glade:382
 #: src/gui/glade/selectPhotoView.glade:86 src/gui/glade/oppView.glade:821
-#: src/gui/glade/genericProfileView.glade:1106
-#: src/gui/glade/genericProfileView.glade:1150
+#: src/gui/glade/genericProfileView.glade:1104
+#: src/gui/glade/genericProfileView.glade:1148
 #: src/gui/glade/manageProfileView.glade:90
 #: src/gui/glade/settingView.glade:382
 msgid "Back"
@@ -141,7 +141,7 @@ msgid "Delete"
 msgstr "Supprimer"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:769
-#: src/gui/glade/oppView.glade:769 src/gui/glade/genericProfileView.glade:1217
+#: src/gui/glade/oppView.glade:769 src/gui/glade/genericProfileView.glade:1241
 msgid "Directory where files will be put :"
 msgstr "Répertoire où seront stockées les images :"
 
@@ -190,7 +190,7 @@ msgid "Keep"
 msgstr "Conserver"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:658
-#: src/gui/glade/oppView.glade:658 src/gui/glade/genericProfileView.glade:898
+#: src/gui/glade/oppView.glade:658 src/gui/glade/genericProfileView.glade:897
 msgid ""
 "Keep this one empty to conserv file name.\n"
 "Tips : %n is replaces by the file number."
@@ -211,7 +211,7 @@ msgid "Licence to apply :"
 msgstr "Licence à appliquer :"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:69
-#: src/gui/glade/oppView.glade:69 src/gui/glade/genericProfileView.glade:1265
+#: src/gui/glade/oppView.glade:69 src/gui/glade/genericProfileView.glade:1193
 msgid "Load a profile"
 msgstr "Charger un profil"
 
@@ -255,21 +255,21 @@ msgid "New profile"
 msgstr "Nouveau profil"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:48
-#: src/gui/glade/oppView.glade:48 src/gui/profile.py:171
+#: src/gui/glade/oppView.glade:48 src/gui/profile.py:173
 msgid "Operations to apply"
 msgstr "Opérations à appliquer"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:596
 #: src/gui/glade/newProfileView.glade:596
-#: src/gui/glade/genericProfileView.glade:1050
+#: src/gui/glade/genericProfileView.glade:1048
 msgid "Path to the font file :"
 msgstr "Chemin vers le fichier de police :"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:562
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:699
 #: src/gui/glade/oppView.glade:562 src/gui/glade/newProfileView.glade:699
-#: src/gui/glade/genericProfileView.glade:802
-#: src/gui/glade/genericProfileView.glade:931
+#: src/gui/glade/genericProfileView.glade:801
+#: src/gui/glade/genericProfileView.glade:929
 msgid "Prefix"
 msgstr "Préfixe"
 
@@ -298,20 +298,20 @@ msgstr "Ratio"
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:882
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/settingView.glade:397
 #: src/gui/glade/newProfileView.glade:882
-#: src/gui/glade/genericProfileView.glade:1165
+#: src/gui/glade/genericProfileView.glade:1163
 #: src/gui/glade/settingView.glade:397
 msgid "Save"
 msgstr "Enregistrer"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:784
-#: src/gui/glade/oppView.glade:784 src/gui/glade/genericProfileView.glade:1233
+#: src/gui/glade/oppView.glade:784 src/gui/glade/genericProfileView.glade:1257
 msgid "Select a directory"
 msgstr "Sélectionner un dossier"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:609
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/settingView.glade:211
 #: src/gui/glade/newProfileView.glade:609
-#: src/gui/glade/genericProfileView.glade:1063
+#: src/gui/glade/genericProfileView.glade:1061
 #: src/gui/glade/settingView.glade:211
 msgid "Select a font file"
 msgstr "Sélectionner un fichier ttf"
@@ -344,15 +344,15 @@ msgid "Stop"
 msgstr "Arrêter"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:626
-#: src/gui/glade/oppView.glade:626 src/gui/glade/genericProfileView.glade:866
+#: src/gui/glade/oppView.glade:626 src/gui/glade/genericProfileView.glade:865
 msgid "Substitution"
 msgstr "Remplacement"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/oppView.glade:577
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/glade/newProfileView.glade:714
 #: src/gui/glade/oppView.glade:577 src/gui/glade/newProfileView.glade:714
-#: src/gui/glade/genericProfileView.glade:817
-#: src/gui/glade/genericProfileView.glade:946
+#: src/gui/glade/genericProfileView.glade:816
+#: src/gui/glade/genericProfileView.glade:944
 msgid "Suffix"
 msgstr "Suffixe"
 
@@ -387,27 +387,27 @@ msgid "px"
 msgstr "px"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:127
-#: src/gui/manage.py:134 src/gui/profile.py:243
+#: src/gui/manage.py:134 src/gui/profile.py:256
 msgid "A profile already has this name"
 msgstr "Un profil porte déjà ce nom"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:129
-#: src/gui/manage.py:136 src/gui/profile.py:245
+#: src/gui/manage.py:136 src/gui/profile.py:258
 msgid "Are you sure to save this profile and lose the older one ?"
 msgstr "Êtes vous sûr d'enregistrer ce profil et de perdre l'ancien ?"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:166
-#: src/gui/manage.py:173 src/gui/profile.py:255
+#: src/gui/manage.py:173 src/gui/profile.py:268
 msgid "Succed to create the profile"
 msgstr "Profil créer avec succès"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:171
-#: src/gui/manage.py:178 src/gui/profile.py:260
+#: src/gui/manage.py:178 src/gui/profile.py:273
 msgid "An error occured"
 msgstr "Une erreur est apparue"
 
 #: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:173
-#: src/gui/manage.py:180 src/gui/profile.py:262
+#: src/gui/manage.py:180 src/gui/profile.py:275
 msgid "Unable to save the profile"
 msgstr "Impossible d'enregistrer le profil"
 
@@ -552,15 +552,23 @@ msgstr "Merci de sélectionner au moins un fichier avant de poursuivre"
 msgid "Select pictures to labelize"
 msgstr "Sélectionner des images à labeliser"
 
-#: src/gui/profile.py:199
+#: src/gui/profile.py:212
 msgid ""
 "<i><span size='small'>If you want to automaticly create a new directory "
-"click <a href='#'>here</a></span></i>"
+"click <a href='auto'>here</a></span></i>"
 msgstr ""
 "<i><span size='small'>Si vous voulez qu'un répertoire soit créé "
-"automatiquement <a href='#'>ici</a></span></i>"
+"automatiquement, cliquez <a href='#'>ici</a></span></i>"
 
-#: src/gui/profile.py:223
+#: src/gui/profile.py:214
+msgid ""
+"<i><span size='small'>Currently a new directory will be create, if you don't "
+"want, click <a href='unauto'>here</a></span></i>"
+msgstr ""
+"<i><span size='small'>Pour l'instant, un nouveau répertoire sera créé, si "
+"vous ne le souhaitez pas, clickez <a href='unauto'>ici</a></span></i>"
+
+#: src/gui/profile.py:236
 msgid "Edit profile"
 msgstr "Éditer un profil"
 
