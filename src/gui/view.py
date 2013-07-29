@@ -16,7 +16,7 @@ class View(Gtk.Alignment):
          which load a glade view and connect theses signals
     """
     
-    def __init__(self,gladeFile,viewName):
+    def __init__(self,gladeFile,viewName="view"):
         Gtk.Alignment.__init__(self)
         
         ## Load from Glade

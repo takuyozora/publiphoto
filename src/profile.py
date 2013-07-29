@@ -37,6 +37,12 @@ class Profile:
         self._version = 1.0
         self._compatibility = [1.0]
         
+    def __repr__(self):
+        return (str)(self.__dict__)
+    
+    def __str__(self):
+        return (str)(self.__dict__)
+        
     def save(self,name):
         with open(os.path.join(PROFILE_PATH,name+".profile"),'wb+') as file:
             pickle.dump(self,file)

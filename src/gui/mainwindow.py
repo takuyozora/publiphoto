@@ -6,6 +6,7 @@ from gi.repository import Gtk
 
 from src.gui.welcome import WelcomeView
 from src.gui.labelize import SelectPhotoView
+from src.gui.profile import ProfileView, EditProfileView, ProcessProfileView
 from src.tools import root_path 
 
 
@@ -58,7 +59,7 @@ class MainWindow(Gtk.Window):
         
     def init_welcome_view(self):
         self.switch_view(WelcomeView(self))
-        
+        #self.switch_view(ProcessProfileView(self))
         
     def clean_viewContainer(self):
         if self.current_view is not None:

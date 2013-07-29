@@ -7,6 +7,7 @@ from gettext import gettext as _
 from src.config import LICENCES
 from src.tools import numbify
 from src.gui import view
+from src.gui.profile import EditProfileView
 from src.profile import get_profiles, del_profile, Profile, load_profile
 
 
@@ -118,7 +119,6 @@ class NewProfileView(view.View):
         self.renameBox.set_sensitive(widget.get_active())
         
     def on_dir_toggled(self,widget,n):
-        active = widget.get_active()
         self.dirBox.set_sensitive(active)
         
     def on_return_clicked(self,widget):
@@ -243,10 +243,10 @@ class ManageProfileView(view.View):
         dialog.destroy()
         
     def on_new_clicked(self,widget):
-        self.parent.switch_view(NewProfileView(self.parent))
+        self.parent.switch_view(EditProfileView(self.parent,self))
     
     def on_modify_clicked(self,widget):
-        self.parent.switch_view(NewProfileView(self.parent,self.currentSelected))
+        self.parent.switch_view(EditProfileView(self.parent,self,self.currentSelected))
         
     def on_return_clicked(self,widget):
         self.parent.init_welcome_view()

@@ -9,6 +9,7 @@ from src import tools
 from src.config import LICENCES
 from src.gui import view
 from src.gui.process import ProcessView
+from src.gui.profile import ProcessProfileView
 from src import profile
 import os
 
@@ -190,7 +191,7 @@ class SelectPhotoView(view.View):
     
             dialog.destroy()
             return
-        self.parent.switch_view(OpperationView(self.parent,self.files))
+        self.parent.switch_view(ProcessProfileView(self.parent,self,self.files))
             
     def recreate_model(self):
         self.model = Gtk.ListStore(str)
