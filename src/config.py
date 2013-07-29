@@ -8,6 +8,7 @@
 ######
 
 LICENCES = list()
+LICENCES.append("Art Libre")
 LICENCES.append("Creative Commons By")
 LICENCES.append("Creative Commons By-Sa")
 LICENCES.append("Creative Commons By-Nd")
