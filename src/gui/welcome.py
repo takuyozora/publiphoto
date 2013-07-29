@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from gi.repository import Gtk,Gdk
+from gi.repository import Gtk,GdkPixbuf,Gdk
 
 from src.gui import view
 from src.gui.labelize import SelectPhotoView
@@ -26,3 +26,13 @@ class WelcomeView(view.View):
         
     def on_setting_clicked(self,widget):
         self.parent.switch_view(SettingView(self.parent))
+        
+    def on_about_clicked(self,widget):
+        b = Gtk.Builder()
+        b.add_from_file("src/gui/glade/aboutDialog.glade")
+        d = b.get_object("about")
+        #GdkPixbuf.Pixbuf.get_from_image("src/publiphoto.svg")
+        #d.set_parent(self.parent)
+        d.set_logo(GdkPixbuf.Pixbuf.new_from_file("src/publiphoto.svg"))
+        d.run()
+        d.destroy()
