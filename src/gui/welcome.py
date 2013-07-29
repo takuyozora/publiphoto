@@ -31,8 +31,9 @@ class WelcomeView(view.View):
         b = Gtk.Builder()
         b.add_from_file("src/gui/glade/aboutDialog.glade")
         d = b.get_object("about")
-        #GdkPixbuf.Pixbuf.get_from_image("src/publiphoto.svg")
-        #d.set_parent(self.parent)
+        d.set_comments(_("""Publi' Photo was develop in order to help the publishing of professional or semi-professional photographies.
+The main idea is that in majority, country's law say that a photography will automaticly be protected by the intellectual property. So the public domain suffer of this, cause lots of pictures could free as in freedom.
+Publi' Photo is here to help people to distribute their photographies with a free licence."""))
         d.set_logo(GdkPixbuf.Pixbuf.new_from_file("src/publiphoto.svg"))
         d.run()
         d.destroy()
