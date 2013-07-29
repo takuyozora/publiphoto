@@ -61,9 +61,10 @@ def draw_label_cairo(img_path,label,font=False):
     return im
 
 def draw_text_with_halo(img, text, font, halo_size, col, halo_col):
+    sett = load_settings()
     vertical = False
-    x = img.size[0]
-    y = img.size[1]
+    x = img.size[0] 
+    y = img.size[1] 
 #     if img.size[1] > img.size[0]:
 #         vertical = True
 #         w = img.size[1]
@@ -76,10 +77,29 @@ def draw_text_with_halo(img, text, font, halo_size, col, halo_col):
 #         p_y = (y / 1000) * 970
 #         p_x = x/100
     ## Calcul des positions pour le text
-    w = img.size[0]
-    h = img.size[1]
-    p_y = (y / 1000) * 990 - font.getsize(text)[1]
-    p_x = x/100
+    w = img.size[0]  # (int)(img.size[0] * math.cos(sett.position["angle"]*(180/math.pi)))
+    h = img.size[1]  # (int)(img.size[1] * math.sin(sett.position["angle"]*(180/math.pi)))
+    if abs(sett.position["angle"]) >= 90:
+        tmp = w
+        w = h
+        h = tmp
+#     w = (int)(img.size[0] * math.cos(sett.position["angle"]*(180/math.pi))) + (int)(img.size[1] * math.sin(sett.position["angle"]*(180/math.pi)))
+#     if w < 1: w *= -1
+#     h = (int)(img.size[0] * math.sin(sett.position["angle"]*(180/math.pi))) + (int)(img.size[1] * math.cos(sett.position["angle"]*(180/math.pi)))
+#     if h < 1 : h *= -1
+    if "bottom" in sett.position["corner"]:
+        p_y = (y / 1000) * 990 - font.getsize(text)[1]
+    elif "top" in sett.position["corner"]:
+        p_y = (y / 1000) * 10
+    if "right" in sett.position["corner"]:
+        p_x = (x/100) * 99 - font.getsize(text)[0]
+    elif "left" in sett.position["corner"]:
+        p_x = x/100
+        
+    if sett.position["corner"] == "center":
+        p_x= x/2 - font.getsize(text)[0]/2
+        p_y = y/2 - font.getsize(text)[1]/2
+    
 #     p_y = y/2
 #     p_x = x/2
     position = ((int)(p_x),(int)(p_y))
@@ -106,8 +126,8 @@ def draw_text_with_halo(img, text, font, halo_size, col, halo_col):
     myfilter = ImageFilter.Kernel((5, 5), kernel, scale = halo_size * sum(kernel))
     blurred_halo = halo.filter(myfilter)
     ImageDraw.Draw(blurred_halo).text(position, text, font = font, fill = col)
-#     if vertical:
-#         blurred_halo=blurred_halo.rotate(90, expand=0)
+    if sett.position["angle"] != 0:
+        blurred_halo=blurred_halo.rotate(sett.position["angle"], expand=0)
     compo_mask = ImageChops.invert(blurred_halo)
     return Image.composite(img, blurred_halo, compo_mask) 
 

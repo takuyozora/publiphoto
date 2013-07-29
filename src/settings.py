@@ -28,9 +28,15 @@ class Settings:
     
     def __init__(self):
         self.font = {"scale":1,"haloScale":1,"path":"src/media/DejaVuSansCondensed.ttf","color":(255,255,255),"haloColor":(0,0,0)}
+        self.position = {"corner":"bottom-left","angle":0}
         self.dirName = "publiphoto"
-        self._version = 1.0
-        self._compatible = [1.0]
+        self._version = 1.1
+        self._compatible = [1.0,1.1]
+        
+    def load_from(self,sett):
+        if sett._version == "1.0":
+            self.font = sett.font
+            self.dirName = sett.dirName
         
     def __repr__(self):
         return (str)(self.__dict__)
@@ -47,8 +53,8 @@ def load_compatibility(sett):
     if sett._version == actual_sett._version:
         return sett
     elif sett._version in actual_sett._compatible:
-        ## Try to return a compatible setting object
-        return sett ## Actualy only one version is compatible
+        actual_sett.load_from(sett)
+        return actual_sett ## Actualy only one version is compatible
     else:
         ## Return new default settings
         actual_sett.save()

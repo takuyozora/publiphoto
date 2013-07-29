@@ -36,9 +36,11 @@ class SettingView(view.View):
         
         self.entires = self.load_objects([
                                           "fontScale","haloScale","fontPath","fontColor","haloColor",
+                                          "bottom-left","bottom-right","center","top-left","top-right","angle",
                                           "dirName"])
         
         self.fill_with_settings()
+        self.on_corner_changed(self.entires["center"])
         self.parent = parent
         
     def fill_with_settings(self):
@@ -48,6 +50,8 @@ class SettingView(view.View):
         self.entires["fontPath"].set_filename(sett.font["path"])
         self.entires["fontColor"].set_rgba(convert_to_rgba(sett.font["color"]))
         self.entires["haloColor"].set_rgba(convert_to_rgba(sett.font["haloColor"]))
+        self.entires["angle"].set_value(sett.position["angle"])
+        self.entires[sett.position["corner"]].set_active(True)
         self.entires["dirName"].set_text(sett.dirName)
         self.show_all()
      
@@ -58,8 +62,20 @@ class SettingView(view.View):
         sett.font["path"] = (str)(self.entires["fontPath"].get_filename())
         sett.font["color"] = convert_to_rgb(self.entires["fontColor"].get_rgba())
         sett.font["haloColor"] = convert_to_rgb(self.entires["haloColor"].get_rgba())
+        sett.position["angle"] = (float)(self.entires["angle"].get_value())*(int)(self.entires["center"].get_active())
+        sett.position["corner"] = self.find_corner()
         sett.dirName = (str)(self.entires["dirName"].get_text())
         return sett
+    
+    def find_corner(self):
+        for radio in self.entires["bottom-left"].get_group():
+            if radio.get_active():
+                for name, widget in self.entires.items():
+                    if widget == radio:
+                        return name
+                    
+    def on_corner_changed(self,widget):
+        self.entires["angle"].set_sensitive(self.entires["center"].get_active())
         
     def on_save_clicked(self,widget):
         dialog = Gtk.MessageDialog(self.parent, 0, Gtk.MessageType.QUESTION,
