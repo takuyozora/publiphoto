@@ -3,9 +3,11 @@
 from gi.repository import Gtk
 from gettext import gettext as _
 
+import os
+import sys
+
 from src.gui import view
 from src.gui.process import ProcessView
-# from src.gui.manage import ManageProfileView
 
 from src.profile import load_profile
 from src.tools import numbify
@@ -170,6 +172,9 @@ class ProcessProfileView(ProfileView):
         
         self.elems["mainLabel"].set_text(_("Operations to apply"))
         
+        self.on_dir_selected(self.elems["dir"])
+        self.on_autodir_clicked(self.elems["dir"], "auto")
+        
     def create_profile_from_entry(self):
         p = ProfileView.create_profile_from_entry(self)
         
@@ -191,14 +196,22 @@ class ProcessProfileView(ProfileView):
         self.parent.switch_view(ProcessView(self.parent,self.files,self.create_profile_from_entry().__dict__))
         
     def on_autodir_clicked(self,widget,uri):
-        self.elems["dir"].unselect_all()
+        if uri == "auto":
+            self.elems["dir"].unselect_all()
+            self.elems["dir"].set_sensitive(False)
+        else:
+            self.elems["dir"].set_sensitive(True)
+            if sys.platform.startswith('linux'):
+                self.elems["dir"].set_filename(os.environ["HOME"])
+            else:
+                self.elems["dir"].set_filename(os.path.expanduser('~user'))
         return True # Do not show the link
         
     def on_dir_selected(self, widget):
         if widget.get_filename() is not None:
-            self.elems["dirLabel"].set_markup(_("<i><span size='small'>If you want to automaticly create a new directory click <a href='#'>here</a></span></i>"))
+            self.elems["dirLabel"].set_markup(_("<i><span size='small'>If you want to automaticly create a new directory click <a href='auto'>here</a></span></i>"))
         else:
-            self.elems["dirLabel"].set_markup(_("<i><span size='small'>Currently a new directory will be create</span></i>"))
+            self.elems["dirLabel"].set_markup(_("<i><span size='small'>Currently a new directory will be create, if you don't want, click <a href='unauto'>here</a></span></i>"))
             
         
     def on_profile_changed(self,widget):
