@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-23 15:04+0200\n"
+"POT-Creation-Date: 2013-07-29 02:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,120 +17,196 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/gui/manage.py:127
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:127
+#: src/gui/manage.py:134 src/gui/profile.py:243
 msgid "A profile already has this name"
 msgstr ""
 
-#: src/gui/manage.py:129
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:129
+#: src/gui/manage.py:136 src/gui/profile.py:245
 msgid "Are you sure to save this profile and lose the older one ?"
 msgstr ""
 
-#: src/gui/manage.py:166
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:166
+#: src/gui/manage.py:173 src/gui/profile.py:255
 msgid "Succed to create the profile"
 msgstr ""
 
-#: src/gui/manage.py:171
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:171
+#: src/gui/manage.py:178 src/gui/profile.py:260
 msgid "An error occured"
 msgstr ""
 
-#: src/gui/manage.py:173
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:173
+#: src/gui/manage.py:180 src/gui/profile.py:262
 msgid "Unable to save the profile"
 msgstr ""
 
-#: src/gui/manage.py:194
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:194
+#: src/gui/manage.py:201
 msgid "Profile name"
 msgstr ""
 
-#: src/gui/manage.py:223
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:223
+#: src/gui/manage.py:230
 msgid "Confirm the action"
 msgstr ""
 
-#: src/gui/manage.py:225
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/manage.py:225
+#: src/gui/manage.py:232
 #, python-format
 msgid "Are you sure to delete thie profile %s ?"
 msgstr ""
 
-#: src/gui/settings.py:55
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/settings.py:55
+#: src/gui/settings.py:66
 msgid "Confirm saving"
 msgstr ""
 
-#: src/gui/settings.py:57
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/settings.py:57
+#: src/gui/settings.py:68
 msgid "Are you sure to replace settings ?"
 msgstr ""
 
-#: src/gui/process.py:45
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:46
+#: src/gui/process.py:53
 msgid "Opening"
 msgstr ""
 
-#: src/gui/process.py:46
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:47
+#: src/gui/process.py:54
 msgid "Working on"
 msgstr ""
 
-#: src/gui/process.py:50
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:51
+#: src/gui/process.py:58
 msgid "Unable to open file"
 msgstr ""
 
-#: src/gui/process.py:58
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:53
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:78
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:98
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:130
+#: src/gui/process.py:60 src/gui/process.py:85 src/gui/process.py:105
+#: src/gui/process.py:137
+msgid "Picture"
+msgstr ""
+
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:54
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:79
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:99
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:131
+#: src/gui/process.py:61 src/gui/process.py:86 src/gui/process.py:106
+#: src/gui/process.py:138
+msgid "Settings"
+msgstr ""
+
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:55
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:80
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:100
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:132
+#: src/gui/process.py:62 src/gui/process.py:87 src/gui/process.py:107
+#: src/gui/process.py:139
+msgid "Args"
+msgstr ""
+
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:62
+#: src/gui/process.py:69
 msgid "Resizing"
 msgstr ""
 
-#: src/gui/process.py:63
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:67
+#: src/gui/process.py:74
 msgid "Resize in"
 msgstr ""
 
-#: src/gui/process.py:65
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:69
+#: src/gui/process.py:76
 msgid "keeping ratio"
 msgstr ""
 
-#: src/gui/process.py:67
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:71
+#: src/gui/process.py:78
 msgid "without keeping ratio"
 msgstr ""
 
-#: src/gui/process.py:72
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:76
+#: src/gui/process.py:83
 msgid "Unable to rename the picute"
 msgstr ""
 
-#: src/gui/process.py:78 src/gui/process.py:84
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:85
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:91
+#: src/gui/process.py:92 src/gui/process.py:98
 msgid "Adding label"
 msgstr ""
 
-#: src/gui/process.py:89
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:96
+#: src/gui/process.py:103
 msgid "Unable to add the label"
 msgstr ""
 
-#: src/gui/process.py:94
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:104
+#: src/gui/process.py:111
 msgid "Saving"
 msgstr ""
 
-#: src/gui/process.py:114
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:124
+#: src/gui/process.py:131
 msgid "Saving as"
 msgstr ""
 
-#: src/gui/process.py:116
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:126
+#: src/gui/process.py:133
 msgid "Succes"
 msgstr ""
 
-#: src/gui/process.py:118
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:128
+#: src/gui/process.py:135
 msgid "Unable to save the picture"
 msgstr ""
 
-#: src/gui/process.py:125
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:138
+#: src/gui/process.py:145
 #, python-format
 msgid "Work done in %s seconde(s)"
 msgstr ""
 
-#: src/gui/process.py:190
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/process.py:203
+#: src/gui/process.py:210
 msgid "Finished"
 msgstr ""
 
-#: src/gui/labelize.py:183
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/labelize.py:183
+#: src/gui/labelize.py:174
 msgid "Files"
 msgstr ""
 
-#: src/gui/labelize.py:198
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/labelize.py:198
+#: src/gui/labelize.py:189
 msgid "Please, select at least one file to continue"
 msgstr ""
 
-#: src/gui/labelize.py:212
+#: pkg/ArchLinux/pkg/publiphoto/usr/share/publiphoto/src/gui/labelize.py:212
+#: src/gui/labelize.py:203
 msgid "Select pictures to labelize"
+msgstr ""
+
+#: src/gui/profile.py:171
+msgid "Operations to apply"
+msgstr ""
+
+#: src/gui/profile.py:199
+msgid ""
+"<i><span size='small'>If you want to automaticly create a new directory "
+"click <a href='#'>here</a></span></i>"
+msgstr ""
+
+#: src/gui/profile.py:201
+msgid ""
+"<i><span size='small'>Currently a new directory will be create</span></i>"
+msgstr ""
+
+#: src/gui/profile.py:223
+msgid "Edit profile"
 msgstr ""
