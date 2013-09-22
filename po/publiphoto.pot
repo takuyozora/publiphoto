@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-29 12:16+0200\n"
+"POT-Creation-Date: 2013-09-22 19:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,12 +27,16 @@ msgstr ""
 msgid "<b>Customised font</b>"
 msgstr ""
 
-#: src/gui/glade/settingView.glade:304
+#: src/gui/glade/settingView.glade:527
 msgid "<b>Default directory</b>"
 msgstr ""
 
-#: src/gui/glade/settingView.glade:91
+#: src/gui/glade/settingView.glade:97
 msgid "<b>Font</b>"
+msgstr ""
+
+#: src/gui/glade/settingView.glade:310
+msgid "<b>Label position</b>"
 msgstr ""
 
 #: src/gui/glade/oppView.glade:430 src/gui/glade/newProfileView.glade:465
@@ -69,6 +73,10 @@ msgstr ""
 msgid "About"
 msgstr ""
 
+#: src/gui/glade/settingView.glade:662
+msgid "Angle"
+msgstr ""
+
 #: src/gui/glade/oppView.glade:836 src/gui/glade/genericProfileView.glade:1120
 msgid "Apply"
 msgstr ""
@@ -77,7 +85,7 @@ msgstr ""
 #: src/gui/glade/genericProfileView.glade:1105
 #: src/gui/glade/genericProfileView.glade:1149
 #: src/gui/glade/manageProfileView.glade:90
-#: src/gui/glade/settingView.glade:382
+#: src/gui/glade/settingView.glade:605
 msgid "Back"
 msgstr ""
 
@@ -105,7 +113,7 @@ msgstr ""
 msgid "Current operation"
 msgstr ""
 
-#: src/gui/glade/settingView.glade:126
+#: src/gui/glade/settingView.glade:132
 msgid "Default font"
 msgstr ""
 
@@ -117,11 +125,11 @@ msgstr ""
 msgid "Directory where files will be put :"
 msgstr ""
 
-#: src/gui/glade/settingView.glade:140
+#: src/gui/glade/settingView.glade:146
 msgid "Font color"
 msgstr ""
 
-#: src/gui/glade/settingView.glade:112
+#: src/gui/glade/settingView.glade:118
 msgid "Font scale"
 msgstr ""
 
@@ -129,11 +137,11 @@ msgstr ""
 msgid "GNU GPL v3"
 msgstr ""
 
-#: src/gui/glade/settingView.glade:154
+#: src/gui/glade/settingView.glade:160
 msgid "Halo color"
 msgstr ""
 
-#: src/gui/glade/settingView.glade:225
+#: src/gui/glade/settingView.glade:231
 msgid "Halo scale"
 msgstr ""
 
@@ -185,7 +193,7 @@ msgstr ""
 msgid "More informations"
 msgstr ""
 
-#: src/gui/glade/settingView.glade:325
+#: src/gui/glade/settingView.glade:548
 msgid "Name"
 msgstr ""
 
@@ -203,13 +211,17 @@ msgstr ""
 msgid "New profile"
 msgstr ""
 
-#: src/gui/glade/oppView.glade:48 src/gui/profile.py:173
+#: src/gui/glade/oppView.glade:48 src/gui/profile.py:177
 msgid "Operations to apply"
 msgstr ""
 
 #: src/gui/glade/newProfileView.glade:596
 #: src/gui/glade/genericProfileView.glade:1049
 msgid "Path to the font file :"
+msgstr ""
+
+#: src/gui/glade/settingView.glade:331
+msgid "Position"
 msgstr ""
 
 #: src/gui/glade/oppView.glade:562 src/gui/glade/newProfileView.glade:699
@@ -226,17 +238,6 @@ msgstr ""
 msgid "Processing log"
 msgstr ""
 
-#: src/gui/glade/aboutDialog.glade:12 src/gui/welcome.py:34
-msgid ""
-"Publi' Photo was develop in order to help the publishing of professional or "
-"semi-professional photographies.\n"
-"The main idea is that in majority, country's law say that a photography will "
-"automaticly be protected by the intellectual property. So the public domain "
-"suffer of this, cause lots of pictures could free as in freedom.\n"
-"Publi' Photo is here to help people to distribute their photographies with a "
-"free licence."
-msgstr ""
-
 #: src/gui/glade/processView.glade:194
 msgid "Quit"
 msgstr ""
@@ -248,7 +249,7 @@ msgstr ""
 
 #: src/gui/glade/newProfileView.glade:882
 #: src/gui/glade/genericProfileView.glade:1164
-#: src/gui/glade/settingView.glade:397
+#: src/gui/glade/settingView.glade:620
 msgid "Save"
 msgstr ""
 
@@ -258,7 +259,7 @@ msgstr ""
 
 #: src/gui/glade/newProfileView.glade:609
 #: src/gui/glade/genericProfileView.glade:1062
-#: src/gui/glade/settingView.glade:211
+#: src/gui/glade/settingView.glade:217
 msgid "Select a font file"
 msgstr ""
 
@@ -270,9 +271,9 @@ msgstr ""
 msgid "Select pictures"
 msgstr ""
 
-#: src/gui/glade/welcomeView.glade:101 src/gui/glade/settingView.glade:49
-#: src/gui/process.py:61 src/gui/process.py:86 src/gui/process.py:106
-#: src/gui/process.py:138
+#: src/gui/glade/welcomeView.glade:101 src/gui/glade/settingView.glade:55
+#: src/gui/process.py:62 src/gui/process.py:87 src/gui/process.py:107
+#: src/gui/process.py:141
 msgid "Settings"
 msgstr ""
 
@@ -312,23 +313,23 @@ msgstr ""
 msgid "px"
 msgstr ""
 
-#: src/gui/manage.py:134 src/gui/profile.py:256
+#: src/gui/manage.py:134 src/gui/profile.py:261
 msgid "A profile already has this name"
 msgstr ""
 
-#: src/gui/manage.py:136 src/gui/profile.py:258
+#: src/gui/manage.py:136 src/gui/profile.py:263
 msgid "Are you sure to save this profile and lose the older one ?"
 msgstr ""
 
-#: src/gui/manage.py:173 src/gui/profile.py:268
+#: src/gui/manage.py:173 src/gui/profile.py:273
 msgid "Succed to create the profile"
 msgstr ""
 
-#: src/gui/manage.py:178 src/gui/profile.py:273
+#: src/gui/manage.py:178 src/gui/profile.py:278
 msgid "An error occured"
 msgstr ""
 
-#: src/gui/manage.py:180 src/gui/profile.py:275
+#: src/gui/manage.py:180 src/gui/profile.py:280
 msgid "Unable to save the profile"
 msgstr ""
 
@@ -345,102 +346,113 @@ msgstr ""
 msgid "Are you sure to delete thie profile %s ?"
 msgstr ""
 
-#: src/gui/profile.py:212
+#: src/gui/profile.py:216
 msgid ""
 "<i><span size='small'>If you want to automaticly create a new directory "
 "click <a href='auto'>here</a></span></i>"
 msgstr ""
 
-#: src/gui/profile.py:214
+#: src/gui/profile.py:218
 msgid ""
 "<i><span size='small'>Currently a new directory will be create, if you don't "
 "want, click <a href='unauto'>here</a></span></i>"
 msgstr ""
 
-#: src/gui/profile.py:236
+#: src/gui/profile.py:240
 msgid "Edit profile"
 msgstr ""
 
-#: src/gui/settings.py:66
+#: src/gui/settings.py:82
 msgid "Confirm saving"
 msgstr ""
 
-#: src/gui/settings.py:68
+#: src/gui/settings.py:84
 msgid "Are you sure to replace settings ?"
 msgstr ""
 
-#: src/gui/process.py:53
-msgid "Opening"
+#: src/gui/welcome.py:34
+msgid ""
+"Publi' Photo was develop in order to help the publishing of professional or "
+"semi-professional photographies.\n"
+"The main idea is that in majority, country's law say that a photography will "
+"automaticly be protected by the intellectual property. So the public domain "
+"suffer of this, cause lots of pictures could free as in freedom.\n"
+"Publi' Photo is here to help people to distribute their photographies with a "
+"free licence."
 msgstr ""
 
 #: src/gui/process.py:54
+msgid "Opening"
+msgstr ""
+
+#: src/gui/process.py:55
 msgid "Working on"
 msgstr ""
 
-#: src/gui/process.py:58
+#: src/gui/process.py:59
 msgid "Unable to open file"
 msgstr ""
 
-#: src/gui/process.py:60 src/gui/process.py:85 src/gui/process.py:105
-#: src/gui/process.py:137
+#: src/gui/process.py:61 src/gui/process.py:86 src/gui/process.py:106
+#: src/gui/process.py:140
 msgid "Picture"
 msgstr ""
 
-#: src/gui/process.py:62 src/gui/process.py:87 src/gui/process.py:107
-#: src/gui/process.py:139
+#: src/gui/process.py:63 src/gui/process.py:88 src/gui/process.py:108
+#: src/gui/process.py:142
 msgid "Args"
 msgstr ""
 
-#: src/gui/process.py:69
+#: src/gui/process.py:70
 msgid "Resizing"
 msgstr ""
 
-#: src/gui/process.py:74
+#: src/gui/process.py:75
 msgid "Resize in"
 msgstr ""
 
-#: src/gui/process.py:76
+#: src/gui/process.py:77
 msgid "keeping ratio"
 msgstr ""
 
-#: src/gui/process.py:78
+#: src/gui/process.py:79
 msgid "without keeping ratio"
 msgstr ""
 
-#: src/gui/process.py:83
+#: src/gui/process.py:84
 msgid "Unable to rename the picute"
 msgstr ""
 
-#: src/gui/process.py:92 src/gui/process.py:98
+#: src/gui/process.py:93 src/gui/process.py:99
 msgid "Adding label"
 msgstr ""
 
-#: src/gui/process.py:103
+#: src/gui/process.py:104
 msgid "Unable to add the label"
 msgstr ""
 
-#: src/gui/process.py:111
+#: src/gui/process.py:112
 msgid "Saving"
 msgstr ""
 
-#: src/gui/process.py:131
+#: src/gui/process.py:134
 msgid "Saving as"
 msgstr ""
 
-#: src/gui/process.py:133
+#: src/gui/process.py:136
 msgid "Succes"
 msgstr ""
 
-#: src/gui/process.py:135
+#: src/gui/process.py:138
 msgid "Unable to save the picture"
 msgstr ""
 
-#: src/gui/process.py:145
+#: src/gui/process.py:148
 #, python-format
 msgid "Work done in %s seconde(s)"
 msgstr ""
 
-#: src/gui/process.py:210
+#: src/gui/process.py:213
 msgid "Finished"
 msgstr ""
 
