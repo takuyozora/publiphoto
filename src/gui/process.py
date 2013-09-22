@@ -119,7 +119,6 @@ class RunningProcess(threading.Thread):
                     if len(split) < 2: # Add jpeg extension if the file name hasn't any one
                         split.append("jpeg")
                     basename = self.args["rename"][0] + sans_ext + self.args["rename"][1] + "." + split[-1]
-                    print((str)((int)(log10(len(self.files)))+1))
                     n_zero = "{0:0"+(str)((int)(log10(len(self.files)))+1)+"d}"
                     basename = basename.replace("%n", n_zero.format(n_finished)) # format number with 4 digit 
                 if self.args["dir"] is None:
