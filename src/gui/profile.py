@@ -9,12 +9,16 @@ import sys
 from src.gui import view
 from src.gui.process import ProcessView
 
+
 from src.profile import load_profile
 from src.tools import numbify
 from src.config import LICENCES
 from src.profile import load_profile, get_profiles, Profile
 
-
+# ##
+# Todo : comprendre pourquoi l'import de manage (on save clicked) plante si il est placé au début
+# (Peut-être à cause d'une boucle d'import ou d'un problème de nommage parès l'unification des profile gui)
+# ##
 
 
 class ProfileView(view.View):
@@ -234,6 +238,7 @@ class EditProfileView(ProfileView):
         self.profile = profile
         if self.profile is not None:
             self.elems["mainLabel"].set_text(_("Edit profile"))
+            self.elems["name"].set_text(previous.currentSelected)
             self.fill_with_profile(load_profile(self.profile))
         
     def create_profile_from_entry(self):
@@ -277,7 +282,8 @@ class EditProfileView(ProfileView):
             dialog.destroy()
             return
         finally:
-            self.parent.switch_view(ManageProfileView(self.parent))
+            from src.gui import manage
+            self.parent.switch_view(manage.ManageProfileView(self.parent))
         
     def on_font_toggled(self,widget,n):
         self.elems["fontBox"].set_sensitive(widget.get_active())
